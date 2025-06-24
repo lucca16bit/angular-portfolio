@@ -1,27 +1,50 @@
-<header class="flex items-center justify-around w-full h-28">
-    <div class=""></div>
-    <nav class="flex ">
-        <ul class="flex items-center justify-between font-semibold text-xl leading-6 tracking-tight gap-8">
+<header class="flex items-center justify-between md:justify-around w-full h-28 px-6">
+    <div class="">Logo</div>
+    <nav
+        class="nav flex"
+        [ngClass]="{'active': menuOpen}"
+    >
+        <button
+            class="menu-button block md:hidden"
+            type="button"
+            (click)="toggleMenu()"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8">
             <li class="hover:underline cursor-pointer">
-                <a href="">{{ firstTitle }}</a>
+                <a class="py-4" href="">{{ firstTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a href="">{{ secondTitle }}</a>
+                <a class="py-4" href="">{{ secondTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a href="">{{ thirdTitle }}</a>
+                <a class="py-4" href="">{{ thirdTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a href="">{{ fourthTitle }}</a>
+                <a class="py-4" href="">{{ fourthTitle }}</a>
+            </li>
+            <li class="block md:hidden">
+                <button
+                    class="flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
+                    type="button"
+                    (mousedown)="isActive = true"
+                    (mouseleave)="isActive = false"
+                    (click)="submit()"
+                >
+                    {{ buttonTitle }}
+                    <img [src]="isActive ? 'assets/svg/download-black.svg' : 'assets/svg/download-white.svg'" alt="Download">
+                </button>
             </li>
         </ul>
     </nav>
-    <div class="">
+    <div class="hidden md:flex">
         <button
             class="flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
             type="button"
             (mousedown)="isActive = true"
-            (mouseup)="isActive = false"
             (mouseleave)="isActive = false"
             (click)="submit()"
         >
