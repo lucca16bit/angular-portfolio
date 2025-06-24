@@ -36,7 +36,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 90vh;
+        height: 100vh;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 

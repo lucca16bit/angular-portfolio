@@ -1,7 +1,7 @@
-<header class="flex items-center justify-between md:justify-around w-full h-28 px-6">
+<header class="flex items-center justify-between md:justify-around w-full h-28 px-6 bg-white">
     <div class="">Logo</div>
     <nav
-        class="nav flex"
+        class="nav flex bg-white"
         [ngClass]="{'active': menuOpen}"
     >
         <button
@@ -10,7 +10,7 @@
             (click)="toggleMenu()"
         >
         </button>
-        <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8">
+        <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8 bg-white">
             <li class="hover:underline cursor-pointer">
                 <a class="py-4" href="">{{ firstTitle }}</a>
             </li>

@@ -1,0 +1,90 @@
+<div class="flex w-full max-w-[1280px] mx-auto my-6 justify-center">
+    <div class="flex flex-col md:flex-row w-full h-auto">
+        <div class="flex w-full px-6 md:hidden">
+            <img src="assets/svg/main-illustration.svg" alt="Hero Illustration">
+        </div>
+        <div class="flex flex-col md:w-3/5 h-auto px-6 my-8 justify-center">
+            <div>
+                <span class="text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight">{{ greeting }}</span>
+                <span class="text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ userName }}</span>
+            </div>
+            <div>
+                <span class="text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ areaTitle }}</span>
+                <span class="outlined text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ outlinedRole }}</span>
+            </div>
+            <div>
+                <span class="text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight">{{ based }}</span>
+                <span class="text-3xl leading-7 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ country }}</span>
+            </div>
+            <div class="mt-8">
+                <p class="text-neutral-500 text-base leading-6 tracking-wide">{{ description }}</p>
+            </div>
+        </div>
+        <!-- <div class="hidden md:flex absolute right-0 top-0 h-full w-1/2  items-center justify-end px-6">
+            <img
+                class="max-h-[500px]"
+                src="assets/svg/main-illustration.svg"
+                alt="Hero Illustration"
+            >
+        </div> -->
+    </div>
+</div>
+<div class="flex w-full gap-2">
+    <div class="flex gap-6 mx-auto px-6 w-full max-w-[1280px]">
+        <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
+            <button
+                class="flex w-15 h-15 p-4 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                type="button"
+                (mousedown)="linkedinActive = true"
+                (mouseover)="linkedinActive = true"
+                (mouseleave)="linkedinActive = false"
+            >
+                <img
+                    [src]="linkedinActive ? 'assets/svg/linkedin-white.svg' : 'assets/svg/linkedin-black.svg'"
+                    alt="Linkedin"
+                >
+            </button>
+        </a>
+        <a href="https://www.instagram.com/lucca_16bit/" target="_blank">
+            <button
+                class="flex w-15 h-15 p-1 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                type="button"
+                (mousedown)="instagramActive = true"
+                (mouseover)="instagramActive = true"
+                (mouseleave)="instagramActive = false"
+            >
+                <img
+                    [src]="instagramActive ? 'assets/svg/instagram-white.svg' : 'assets/svg/instagram-black.svg'" alt="Linkedin"
+                >
+            </button>
+        </a>
+        <a href="https://x.com/lucca16bit" target="_blank">
+            <button
+                class="flex w-15 h-15 p-4 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                type="button"
+                (mousedown)="twitterActive = true"
+                (mouseover)="twitterActive = true"
+                (mouseleave)="twitterActive = false"
+            >
+                <img
+                    [src]="twitterActive ? 'assets/svg/twitter-white.svg' : 'assets/svg/twitter-black.svg'"
+                    alt="Linkedin"
+                >
+            </button>
+        </a>
+        <a href="https://discord.com/users/374650977325678593" target="_blank">
+            <button
+                class="flex w-15 h-15 p-4 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                type="button"
+                (mousedown)="discordActive = true"
+                (mouseover)="discordActive = true"
+                (mouseleave)="discordActive = false"
+            >
+                <img
+                    [src]="discordActive ? 'assets/svg/discord-white.svg' : 'assets/svg/discord-black.svg'"
+                    alt="Discord"
+                >
+            </button>
+        </a>
+    </div>
+</div>
