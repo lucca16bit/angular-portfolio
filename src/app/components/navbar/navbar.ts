@@ -14,11 +14,9 @@ export class Navbar {
     @Input() fourthTitle: string = '';
     @Input() buttonTitle: string = '';
     @Output("submit") onSumit = new EventEmitter();
-    isActive = false;
     menuOpen = false;
 
     submit() {
-        this.isActive = !this.isActive;
         this.onSumit.emit();
     }
 

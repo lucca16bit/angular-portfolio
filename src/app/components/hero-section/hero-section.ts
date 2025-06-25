@@ -14,8 +14,4 @@ export class HeroSection {
     @Input() based: string = '';
     @Input() country: string = '';
     @Input() description: string = '';
-    linkedinActive = false;
-    twitterActive = false;
-    instagramActive = false;
-    discordActive = false;
 }
