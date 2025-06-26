@@ -3,7 +3,7 @@
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ title }}</span>
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ strong }}</span>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto my-8 gap-12">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto my-8 gap-5 md:gap-12">
         <div class="group flex flex-col w-44 h-44 items-center justify-center bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
             <svg class="fill-black group-hover:fill-white mx-auto my-2 w-15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
                 <path d="M3 16.6 49.5 0l47.8 16.3-7.7 61.5-40 22.2-39.5-21.9z"/>
@@ -70,6 +70,14 @@
                 </defs>
             </svg>
             <span class="text-xl leading-6 font-bold my-4">Spring Boot</span>
+        </div>
+        <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+            <app-svg
+                icon="github"
+                color="black"
+                [size]="42">
+            </app-svg>
+            <span class="text-xl leading-6 font-bold my-4">Express</span>
         </div>
     </div>
 </div>
