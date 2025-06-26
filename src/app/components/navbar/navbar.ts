@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Svg } from "../svg/svg";
 
 @Component({
     selector: 'app-navbar',
-    imports: [CommonModule],
+    imports: [CommonModule, Svg],
     templateUrl: './navbar.html',
     styleUrl: './navbar.css'
 })

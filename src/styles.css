@@ -16,4 +16,5 @@
 html, body {
     font-family: 'Sora', sans-serif;
     height: auto;
+    scroll-behavior: smooth;
 }

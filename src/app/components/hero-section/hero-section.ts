@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { Svg } from "../svg/svg";
 
 @Component({
     selector: 'app-hero-section',
-    imports: [],
     templateUrl: './hero-section.html',
-    styleUrl: './hero-section.css'
+    styleUrl: './hero-section.css',
+    imports: [Svg]
 })
 export class HeroSection {
     @Input() greeting: string = '';

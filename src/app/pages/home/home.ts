@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../../components/navbar/navbar";
-import { HeroSection } from "../../components/hero-section/hero-section";
-import { Skills } from "../../components/skills/skills";
+
+import { HeroSection } from '../../components/hero-section/hero-section';
+import { Navbar } from '../../components/navbar/navbar';
+import { Skills } from '../../components/skills/skills';
 
 @Component({
   selector: 'app-home',
