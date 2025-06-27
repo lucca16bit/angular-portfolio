@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 import { Svg } from "../svg/svg";
 
 @Component({
@@ -15,7 +15,9 @@ export class Navbar {
     @Input() fourthTitle: string = '';
     @Input() buttonTitle: string = '';
     @Output("submit") onSumit = new EventEmitter();
+    lastScrollPosition = 0;
     menuOpen = false;
+    isHidden = false;
 
     submit() {
         this.onSumit.emit();
@@ -23,5 +25,17 @@ export class Navbar {
 
     toggleMenu() {
         this.menuOpen = !this.menuOpen;
+    }
+
+    @HostListener('window:scroll', [])
+    handleWindowScroll() {
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollPosition > this.lastScrollPosition) {
+            this.isHidden = true;
+        } else {
+            this.isHidden = false;
+        }
+        this.lastScrollPosition = scrollPosition <= 0 ? 0 : scrollPosition;
     }
 }

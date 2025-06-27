@@ -1,4 +1,7 @@
-<header class="flex items-center justify-between md:justify-around w-full h-28 px-6 bg-white">
+<header
+    class="flex fixed top-0 items-center justify-between md:justify-around w-full h-28 px-6 bg-white z-10 transition-all ease-in-out"
+    [ngClass]="{ '-translate-y-full': isHidden, 'translate-y-0': !isHidden }"
+>
     <a href="/home">
         <img class="w-15" src="/assets/img/logo.jpg" alt="">
     </a>
