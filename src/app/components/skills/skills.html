@@ -4,7 +4,6 @@
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ strong }}</span>
     </div>
     <div class="flex flex-col w-full h-auto justify-center items-center mx-auto mt-8">
-        <span class="text-xl leading-6 md:text-[32px] md:leading-10 tracking-tight font-extrabold">Back-End</span>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto my-8 gap-5 md:gap-12">
             <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
@@ -49,45 +48,12 @@
                 </app-svg>
                 <span class="text-xl leading-6 font-bold my-4">Express</span>
             </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="mysql"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">MySQL</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="postgresql"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">PostgreSQL</span>
-            </div>
-        </div>
-    </div>
-    <div class="flex flex-col w-full h-auto justify-center items-center mx-auto mt-8">
-        <span class="text-xl leading-6 md:text-[32px] md:leading-10 tracking-tight font-extrabold">Front-End</span>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto my-8 gap-5 md:gap-12">
             <div class="group flex flex-col w-44 h-44 items-center justify-center bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
                     icon="angular"
                     [size]="70">
                 </app-svg>
                 <span class="text-xl leading-6 font-bold my-4">Angular</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="typescript"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">Typescript</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="javascript"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">Javascript</span>
             </div>
             <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
@@ -120,11 +86,27 @@
                 </app-svg>
                 <span class="text-xl leading-6 font-bold my-4">TailwindCSS</span>
             </div>
-        </div>
-    </div>
-    <div class="flex flex-col w-full h-auto justify-center items-center mx-auto mt-8">
-        <span class="text-xl leading-6 md:text-[32px] md:leading-10 tracking-tight font-extrabold">DevOps e Ferramentas</span>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto my-8 gap-5 md:gap-12">
+            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+                <app-svg
+                    icon="mysql"
+                    [size]="70">
+                </app-svg>
+                <span class="text-xl leading-6 font-bold my-4">MySQL</span>
+            </div>
+            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+                <app-svg
+                    icon="postgresql"
+                    [size]="70">
+                </app-svg>
+                <span class="text-xl leading-6 font-bold my-4">PostgreSQL</span>
+            </div>
+            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+                <app-svg
+                    icon="docker"
+                    [size]="70">
+                </app-svg>
+                <span class="text-xl leading-6 font-bold my-4">Docker</span>
+            </div>
             <div class="group flex flex-col w-44 h-44 items-center justify-center bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
                     icon="aws"
@@ -141,17 +123,24 @@
             </div>
             <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
-                    icon="docker"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">Docker</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
                     icon="git"
                     [size]="70">
                 </app-svg>
                 <span class="text-xl leading-6 font-bold my-4">git</span>
+            </div>
+            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+                <app-svg
+                    icon="powershell"
+                    [size]="70">
+                </app-svg>
+                <span class="text-xl leading-6 font-bold my-4">Powershell</span>
+            </div>
+            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
+                <app-svg
+                    icon="bash"
+                    [size]="70">
+                </app-svg>
+                <span class="text-xl leading-6 font-bold my-4">Bash</span>
             </div>
             <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
@@ -181,20 +170,6 @@
                     [size]="70">
                 </app-svg>
                 <span class="text-xl leading-6 font-bold my-4">npm</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="powershell"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">Powershell</span>
-            </div>
-            <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
-                <app-svg
-                    icon="bash"
-                    [size]="70">
-                </app-svg>
-                <span class="text-xl leading-6 font-bold my-4">Bash</span>
             </div>
             <div class="group flex flex-col items-center justify-center w-44 h-44 bg-white border-2 border-black active:border-transparent hover:bg-black hover:text-white cursor-pointer">
                 <app-svg
