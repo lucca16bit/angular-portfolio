@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Svg } from "../svg/svg";
 
 @Component({
-    selector: 'app-hero-section',
+    selector: 'hero-section',
     templateUrl: './hero-section.html',
     styleUrl: './hero-section.css',
     imports: [Svg]

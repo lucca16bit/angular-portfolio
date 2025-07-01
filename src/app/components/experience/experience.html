@@ -1,24 +1,24 @@
-<div class="flex flex-col w-full h-auto mx-auto py-12 bg-black">
-    <div class="justify-center items-center mx-auto mb-12 text-white">
+<div class="flex flex-col w-full h-auto mx-auto py-20 bg-black">
+    <div class="justify-center items-center mx-auto mb-20 text-white">
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ title }}</span>
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ strong }}</span>
     </div>
     <div class="flex flex-col w-full md:w-3/4 mx-auto h-auto px-6 gap-10">
-        <app-experience-cards
+        <experience-cards
             [noBackground]="true"
             [imageUrl]="'assets/img/fusion-logo.jpg'"
             title="Desenvolvedor Back-End no Projeto Front-end Fusion"
             description="No Projeto Front-End Fusion, atuo como Desenvolvedor Back-End, focando na implementação de sistemas back-end para as aplicações desenvolvidas pela comunidade. Estou participando da construção de funcionalidades, aprendendo sobre boas práticas de programação e contribuindo com o que estou estudando. Essa experiência tem sido importante para colocar em prática meus conhecimentos em projetos reais e evoluir como profissional na área."
             initialDate="Jun 2025"
             endDate="Até o momento"
-        ></app-experience-cards>
-        <app-experience-cards
+        />
+        <experience-cards
             [noBorder]="true"
             [imageUrl]="'assets/img/prefeitura-de-caraguatatuba-logo.jpg'"
             title="Assistente de TI na Prefeitura de Caraguatatuba"
             description="Como Assistente de TI, prestei suporte técnico a professores e equipe administrativa, garantindo o bom funcionamento dos recursos de informática nas salas de aula e setores administrativos. Realizei manutenção de computadores e periféricos, solucionei problemas de hardware e software, e encaminhei demandas mais complexas para a equipe de Analistas da SEDUC. Minha atuação contribuiu para um ambiente tecnológico mais estável e acessível nas escolas da rede pública."
             initialDate="Set 2022"
             endDate="Set 2024"
-        ></app-experience-cards>
+        />
     </div>
 </div>

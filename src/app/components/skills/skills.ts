@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Svg } from '../svg/svg';
 
 @Component({
-    selector: 'app-skills',
+    selector: 'skills',
     imports: [Svg],
     templateUrl: './skills.html',
     styleUrl: './skills.css'

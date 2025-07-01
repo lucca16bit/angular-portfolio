@@ -3,7 +3,7 @@ import { Component, EventEmitter, HostListener, Input, Output } from '@angular/c
 import { Svg } from "../svg/svg";
 
 @Component({
-    selector: 'app-navbar',
+    selector: 'navbar',
     imports: [CommonModule, Svg],
     templateUrl: './navbar.html',
     styleUrl: './navbar.css'

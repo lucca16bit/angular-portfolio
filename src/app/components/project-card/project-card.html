@@ -1,0 +1,50 @@
+<div class="flex w-full h-auto mx-auto py-12 break-keep border-2 ">
+    <div class="flex flex-col md:flex-row xl:flex-col justify-center gap-8 w-full h-auto mx-6">
+        <div class="md:w-[525px] h-96 border-2 border-white rounded-4xl xl:m-0">
+
+        </div>
+        <div class="flex flex-col md:w-2/3 h-auto gap-6">
+            <div class="text-white">
+                <span class="text-xl leading-6 md:text-[32px] md:leading-10 font-bold tracking-tight">{{ projectTitle }}</span>
+            </div>
+            <div class="flex flex-col w-full xl:w-xl h-auto text-neutral-500 gap-4">
+                <p class="text-base leading-6 tracking-wide break-keep">
+                    {{ projectDescription }}
+                </p>
+            </div>
+            <div class="flex flex-col w-full gap-6">
+                <div class="flex flex-wrap gap-2 w-full">
+                    <div
+                        *ngFor="let tech of techs"
+                        class="group flex items-center border-2 p-2 border-neutral rounded-lg hover:bg-neutral cursor-pointer gap-2"
+                    >
+                        <app-svg
+                            class="fill-white"
+                            [icon]="tech.icon"
+                            [size]="25"
+                        />
+                        <span class="text-white">{{ tech.name }}</span>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <a class="group flex gap-2" [href]="demo" target="_blank">
+                        <span class="text-white group-hover:text-neutral">Abrir</span>
+                        <app-svg
+                            class="text-white group-hover:text-neutral"
+                            icon="link"
+                            [size]="20"
+                        />
+                    </a>
+                    <a class="group flex gap-2" [href]="repository" target="_blank">
+                        <span class="text-white group-hover:text-neutral">Repositório</span>
+                        <app-svg
+                            class="text-white group-hover:text-neutral"
+                            icon="link"
+                            [size]="20"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

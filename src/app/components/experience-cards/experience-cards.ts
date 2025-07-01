@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-experience-cards',
+    selector: 'experience-cards',
     imports: [CommonModule],
     templateUrl: './experience-cards.html',
     styleUrl: './experience-cards.css'

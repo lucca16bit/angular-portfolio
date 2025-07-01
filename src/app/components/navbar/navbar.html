@@ -2,8 +2,9 @@
     class="flex fixed top-0 items-center justify-between md:justify-around w-full h-28 px-6 bg-white z-10 transition-all ease-in-out"
     [ngClass]="{ '-translate-y-full': isHidden, 'translate-y-0': !isHidden }"
 >
-    <a href="/home">
-        <img class="w-15" src="/assets/img/logo.jpg" alt="">
+    <a class="flex items-center" href="#home">
+        <img class="w-10" src="/assets/svg/logo.svg" alt="L">
+        <span class="font-bold text-xl leading-6 tracking-tight">Lucas</span>
     </a>
     <nav
         class="nav flex bg-white"
@@ -17,43 +18,45 @@
         </button>
         <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8 bg-white">
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#firstRoute">{{ firstTitle }}</a>
+                <a class="py-4" href="#about-me">{{ firstTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#secondRoute">{{ secondTitle }}</a>
+                <a class="py-4" href="#skills">{{ secondTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#thirdRoute">{{ thirdTitle }}</a>
+                <a class="py-4" href="#projects">{{ thirdTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#fourthRoute">{{ fourthTitle }}</a>
+                <a class="py-4" href="#contact">{{ fourthTitle }}</a>
             </li>
             <li class="block md:hidden">
-                <button
+                <a
                     class="group flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
-                    type="button"
-                    (click)="submit()"
+                    href="assets/docs/cv_LucasGoncalves.pdf"
+                    target="_blank"
                 >
                     {{ buttonTitle }}
                     <app-svg
+                        class="stroke-white group-active:stroke-black"
                         icon="download"
                         [size]="22"
                     ></app-svg>
-                </button>
+                </a>
             </li>
         </ul>
     </nav>
     <div class="hidden md:flex">
-        <button
+        <a
             class="group flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
-            type="button"
-            (click)="submit()"
+            href="assets/docs/cv_LucasGoncalves.pdf"
+            target="_blank"
         >
             {{ buttonTitle }}
             <app-svg
+                class="stroke-white group-active:stroke-black"
                 icon="download"
                 [size]="22"
             ></app-svg>
-        </button>
+        </a>
     </div>
 </header>
