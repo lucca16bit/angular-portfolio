@@ -1,0 +1,94 @@
+<div class="flex flex-col xl:flex-row w-full 2xl:w-4/5 h-auto mx-auto p-6 my-35 bg-white gap-26" (submit)="submit()">
+    <form class="flex flex-col w-full gap-4" [formGroup]="contactForm">
+        <input-form
+            formControlName="name"
+            inputName="name"
+            type="name"
+            placeholder="Seu nome"
+        />
+        <input-form
+            formControlName="email"
+            inputName="email"
+            type="email"
+            placeholder="Email"
+        />
+        <textarea
+            formControlName="description"
+            placeholder="Em que posso te ajudar?*"
+            class="w-full h-30 p-4 rounded-lg border-2 border-black focus:outline-none text-base leading-5 tracking-tight placeholder:text-neutral-500"
+        ></textarea>
+        <div class="flex flex-col md:flex-row w-full gap-4">
+            <button
+                class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer"
+                (click)="submit()"
+            ><span>Entrar em contato</span></button>
+            <div class="flex gap-4">
+                <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
+                    <button
+                        class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                        type="button"
+                    >
+                        <app-svg
+                            icon="linkedin"
+                            color="black"
+                            [size]="32"
+                        ></app-svg>
+                    </button>
+                </a>
+                <a href="https://github.com/lucca16bit" target="_blank">
+                    <button
+                        class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                        type="button"
+                    >
+                        <app-svg
+                            icon="github"
+                            color="black"
+                            [size]="31"
+                        ></app-svg>
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/lucca_16bit/" target="_blank">
+                    <button
+                        class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                        type="button"
+                    >
+                        <app-svg
+                            icon="instagram"
+                            color="black"
+                            [size]="57"
+                        ></app-svg>
+                    </button>
+                </a>
+                <a href="https://x.com/lucca16bit" target="_blank">
+                    <button
+                        class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
+                        type="button"
+                    >
+                        <app-svg
+                            icon="twitter"
+                            color="black"
+                            [size]="32"
+                        ></app-svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="flex flex-col w-full gap-6 ">
+        <div class="flex flex-col gap-2">
+            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ contactTitle }}</span>
+            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ contactSubTitle }}</span>
+        </div>
+        <div class="flex">
+            <span class="text-base leading-6 tracking-wide text-neutral-500">{{ contactDescription }}</span>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a [href]="'mailto:' + myEmail">
+                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold">{{ myEmail }}</span>
+            </a>
+            <a [href]="'tel:' + myPhone">
+                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold">{{ myPhone }}</span>
+            </a>
+        </div>
+    </div>
+</div>
