@@ -18,16 +18,16 @@
         </button>
         <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8 bg-white">
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#about-me">{{ firstTitle }}</a>
+                <a class="py-4" (click)="scrollToSection('about-me')">{{ firstTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#skills">{{ secondTitle }}</a>
+                <a class="py-4" (click)="scrollToSection('skills')">{{ secondTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#projects">{{ thirdTitle }}</a>
+                <a class="py-4" (click)="scrollToSection('projects')">{{ thirdTitle }}</a>
             </li>
             <li class="hover:underline cursor-pointer">
-                <a class="py-4" href="#contact">{{ fourthTitle }}</a>
+                <a class="py-4" (click)="scrollToSection('contact')">{{ fourthTitle }}</a>
             </li>
             <li class="block md:hidden">
                 <a

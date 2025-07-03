@@ -38,4 +38,12 @@ export class Navbar {
         }
         this.lastScrollPosition = scrollPosition <= 0 ? 0 : scrollPosition;
     }
+
+    scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        this.menuOpen = false;
+    }
 }
