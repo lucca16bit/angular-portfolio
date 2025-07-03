@@ -1,52 +1,72 @@
 <div class="flex flex-col w-full h-auto mx-auto py-20 bg-black">
-    <div class="justify-center items-center mx-auto mb-20 text-white">
+    <div class="justify-center items-center mx-auto mb-5 text-white">
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ projectsTitle }}</span>
         <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ projectStrong }}</span>
     </div>
     <div class="grid grid-cols-1 xl:grid-cols-2 w-full h-auto mx-auto 2xl:w-4/5">
         <project-card
-            projectTitle="App fifty cent"
-            projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut imperdiet velit. Suspendisse potenti. Mauris eget dolor eros. In quis eros ut arcu volutpat consequat eget et turpis. Donec sit amet orci tempus justo finibus convallis"
-            demo="https://www.google.com"
-            repository="https://www.google.com"
+            projectTitle="todo.it"
+            projectImageUrl="assets/img/projects/todo.it-logo.png"
+            projectDescription="todo.it é uma aplicação web desenvolvida com Angular e Tailwind para gerenciamento de tarefas. A interface permite adicionar, editar, marcar tarefas como concluídas e remover tarefas, além de filtrar tarefas por prioriedade (Low, Medium, High) de forma simples e intuitiva. A aplicação tambbém conta com autenticação de usuários via JWT, garantindo que o usuário gerencie suas tarefas de forma segura"
+            demo="https://todoit-simply.vercel.app/"
+            repository="https://github.com/lucca16bit/angular-todo.it"
             [techs]="[
-                {name: 'Java', icon: 'miniJava'},
                 {name: 'Angular', icon: 'miniAngular'},
-                {name: 'Typescript', icon: 'miniTypescript'}
+                {name: 'Typescript', icon: 'miniTypescript'},
+                {name: 'TailwindCSS', icon: 'miniTailwind'},
             ]"
         />
         <project-card
-            projectTitle="App fifty cent"
-            projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut imperdiet velit. Suspendisse potenti. Mauris eget dolor eros. In quis eros ut arcu volutpat consequat eget et turpis. Donec sit amet orci tempus justo finibus convallis"
-            demo="https://www.google.com"
-            repository="https://www.google.com"
+            projectTitle="API Rest - todo.it"
+            projectImageUrl="assets/img/projects/todo.it-api-endpoints.png"
+            projectDescription="Este projeto é uma API REST desenvolvida para o projeto todo.it. A aplicação oferece autenticação segura com JWT, garantindo que cada  usuário gerencie suas tarefas de forma segura. Utiliza banco de dados MySQL com versionamento de migrations por Flyway. Conta com documentação interativa via Swagger, seguindo boas práticas de arquitetura, organização de camadas e tratamento de erros."
+            demo="https://java-todolist-production.up.railway.app/"
+            repository="https://github.com/lucca16bit/java-todo.it"
             [techs]="[
                 {name: 'Java', icon: 'miniJava'},
-                {name: 'Angular', icon: 'miniAngular'},
-                {name: 'Typescript', icon: 'miniJavascript'}
+                {name: 'Spring Boot', icon: 'miniSpring'},
+                {name: 'MySQL', icon: 'miniMysql'},
+                {name: 'Flyway', icon: 'miniFlyway'},
+                {name: 'Swagger', icon: 'miniSwagger'}
             ]"
         />
         <project-card
-            projectTitle="App fifty cent"
-            projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut imperdiet velit. Suspendisse potenti. Mauris eget dolor eros. In quis eros ut arcu volutpat consequat eget et turpis. Donec sit amet orci tempus justo finibus convallis"
-            demo="https://www.google.com"
-            repository="https://www.google.com"
+            projectTitle="API Rest - Star Wars"
+            projectImageUrl="assets/img/projects/star-wars-api-endpoints.jpg"
+            projectDescription="API Rest desenvolvida com Node.js, TypeScript e Express, focada no gerenciamento de dados do universo Star Wars, como personagens, naves, planetas e sistemas estelares. Conta com autenticação de usuários via JWT, banco de dados MySQL com Prisma para o mapeamento e migrations, e documentação com Swagger. A aplicação segue boas práticas de organização em camadas, tratamento de erros e segurança, oferecendo endpoints protegidos e operações CRUD para cada entidade."
+            demo="https://express-star-wars-api.onrender.com/"
+            repository="https://github.com/lucca16bit/express-desafio-backend-fusion"
             [techs]="[
-                {name: 'Java', icon: 'miniJava'},
-                {name: 'Angular', icon: 'miniAngular'},
-                {name: 'Typescript', icon: 'miniTypescript'}
+                {name: 'Node.js', icon: 'miniNodejs'},
+                {name: 'Typescript', icon: 'miniTypescript'},
+                {name: 'Express', icon: 'miniExpress'},
+                {name: 'Prisma', icon: 'miniPrisma'},
+                {name: 'Swagger', icon: 'miniSwagger'}
             ]"
         />
         <project-card
-            projectTitle="App fifty cent"
-            projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut imperdiet velit. Suspendisse potenti. Mauris eget dolor eros. In quis eros ut arcu volutpat consequat eget et turpis. Donec sit amet orci tempus justo finibus convallis"
-            demo="https://www.google.com"
-            repository="https://www.google.com"
+            projectTitle="Notes"
+            projectImageUrl="assets/img/projects/notes-logo.png"
+            projectDescription="Aplicativo web criado com React e Tailwind, permitindo registrar notas em texto ou por áudio convertido automaticamente em texto via SpeechRecognition API. O projeto usa componentes acessíveis do Radix UI, ícones do Lucide e notificações com Sonner. As notas são armazenadas localmente no navegador. É uma aplicação leve, moderna e prática, que reforça seu conhecimento em React, Tailwind e consumo de APIs externas"
+            demo="https://reactjs-notes-ten.vercel.app/"
+            repository="https://github.com/lucca16bit/react-app-notes"
             [techs]="[
-                {name: 'Java', icon: 'miniJava'},
-                {name: 'Angular', icon: 'miniAngular'},
-                {name: 'Typescript', icon: 'miniTypescript'}
+                {name: 'React', icon: 'miniReact'},
+                {name: 'Typescript', icon: 'miniTypescript'},
+                {name: 'TailwindCSS', icon: 'miniTailwind'},
+                {name: 'Radix UI', icon: 'miniRadix'},
             ]"
         />
+    </div>
+    <div class="flex w-full justify-center mx-auto mt-5">
+        <button
+            class="group flex p-4 rounded-xl border-2 border-transparent bg-neutral hover:bg-black-800 text-white text-xl leading-6 tracking-wide cursor-pointer gap-2 transition-colors"
+            href="assets/docs/cv_LucasGoncalves.pdf"
+            type="button"
+            (click)="submit()"
+        >
+            <span>ver mais</span>
+            <img src="assets/svg/down.svg" alt="Down">
+        </button>
     </div>
 </div>

@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class AboutMe {
     @Input() aboutTitle: string = '';
     @Input() aboutStrong: string = '';
+    @Input() aboutImageUrl: string = '';
     @Input() firstParagraph: string = '';
     @Input() secondParagraph: string = '';
     @Input() thirdParagraph: string = '';

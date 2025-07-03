@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectCard {
     @Input() projectTitle: string = '';
+    @Input() projectImageUrl: string = '';
     @Input() projectDescription: string = '';
     @Input() techs: { name: string; icon: string }[] = [];
     @Input() demo: string = '';

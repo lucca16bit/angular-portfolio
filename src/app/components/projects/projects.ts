@@ -11,4 +11,7 @@ export class Projects {
     @Input() projectsTitle: string = '';
     @Input() projectStrong: string = '';
 
+    submit() {
+        
+    }
 }
