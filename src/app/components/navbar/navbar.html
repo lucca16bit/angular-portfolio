@@ -2,7 +2,7 @@
     class="flex fixed top-0 items-center justify-between md:justify-around w-full h-28 px-6 bg-white z-10 transition-all ease-in-out"
     [ngClass]="{ '-translate-y-full': isHidden, 'translate-y-0': !isHidden }"
 >
-    <a class="flex items-center" href="#home">
+    <a class="flex items-center cursor-pointer" (click)="scrollToSection('home')">
         <img class="w-10" src="/assets/svg/logo.svg" alt="L">
         <span class="font-bold text-xl leading-6 tracking-tight">Lucas</span>
     </a>
