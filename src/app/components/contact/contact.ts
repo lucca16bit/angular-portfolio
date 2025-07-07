@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 import { ContactForm } from '../../interfaces/form.interface';
+import { FormService } from '../../services/form.service';
 import { InputForm } from '../input-form/input-form';
 import { Svg } from '../svg/svg';
 
@@ -19,7 +20,7 @@ export class Contact implements OnInit {
     @Input() myEmail: string = '';
     @Input() myPhone: string = '';
 
-    constructor(private formBuilder: FormBuilder) {}
+    constructor(private formBuilder: FormBuilder, private formService: FormService) {}
 
     ngOnInit(): void {
         this.contactForm = this.formBuilder.group({
@@ -30,6 +31,13 @@ export class Contact implements OnInit {
     }
 
     submit() {
-        console.log(this.contactForm.value);
-    }
+    if (this.contactForm.invalid) return;
+
+    const { name, email, description } = this.contactForm.value;
+    this.formService.send(name, email, description).subscribe({
+        next: (res) => {
+            this.contactForm.reset();
+        }
+    });
+}
 }
