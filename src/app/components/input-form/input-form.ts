@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 
@@ -5,7 +6,7 @@ type InputTypes = 'name' | 'email' | 'text';
 
 @Component({
     selector: 'input-form',
-    imports: [ReactiveFormsModule],
+    imports: [ReactiveFormsModule, CommonModule],
     providers: [
         {
             provide: NG_VALUE_ACCESSOR,
@@ -20,6 +21,8 @@ export class InputForm implements ControlValueAccessor {
     @Input() inputName: string = '';
     @Input() placeholder: string = '';
     @Input() type: InputTypes = 'text';
+    @Input() errorMessage: string = '';
+    @Input() showError: boolean = false;
 
     value: string = '';
     onChange: any = () => {};
@@ -28,6 +31,10 @@ export class InputForm implements ControlValueAccessor {
     onInput(e: Event) {
         const value = (e.target as HTMLInputElement).value;
         this.onChange(value);
+    }
+
+    onBlur() {
+        this.onTouched();
     }
 
     writeValue(value: any): void {

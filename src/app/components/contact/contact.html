@@ -1,28 +1,47 @@
 <div class="flex flex-col xl:flex-row w-full 2xl:w-4/5 h-auto mx-auto p-6 my-35 bg-white gap-26">
-    <form class="flex flex-col w-full gap-4" [formGroup]="contactForm">
+    <form class="flex flex-col w-full gap-8" [formGroup]="contactForm">
         <input-form
             formControlName="name"
             inputName="name"
             type="name"
             placeholder="Seu nome"
+            [showError]="isValid('name')"
+            [errorMessage]="getErrorMessage('name')"
         />
         <input-form
             formControlName="email"
             inputName="email"
             type="email"
-            placeholder="Email"
+            placeholder="E-mail (Ex: johndoe@gmail.com)"
+            [showError]="isValid('email')"
+            [errorMessage]="getErrorMessage('email')"
         />
-        <textarea
-            formControlName="description"
-            placeholder="Em que posso te ajudar?*"
-            class="w-full h-30 p-4 rounded-lg border-2 border-black focus:outline-none text-base leading-5 tracking-tight placeholder:text-neutral-500"
-        ></textarea>
-        <div class="flex flex-col md:flex-row w-full gap-4">
+        <div class="w-full h-auto -mb-2">
+            <textarea
+                formControlName="description"
+                placeholder="Em que posso te ajudar?*"
+                class="w-full h-30 p-4 rounded-lg border-2 border-black focus:outline-none text-base leading-5 tracking-tight"
+                [class]="isValid('description') ? 'border-error-500 placeholder:text-error-500' : 'border-black placeholder:text-neutral-500'"
+                [maxlength]="maxLength"
+            ></textarea>
+            <div class="flex">
+                <div *ngIf="isValid('description')" class="-mt-1 -mb-6">
+                    <span class="text-error-500 text-base leading-5 tracking-tight">{{ getErrorMessage('description') }}</span>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <div class="shrink-0 -mt-8 mr-3">
+                    <p class="text-sm leading-5 tracking-tight text-neutral-500">{{ charCount }}/{{ maxLength }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row w-full gap-6">
             <button
-                class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer"
+                class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:bg-black disabled:active:text-white"
                 (click)="submit()"
+                [disabled]="isBtnDisabled"
             ><span>Entrar em contato</span></button>
-            <div class="flex gap-4">
+            <div class="flex gap-6">
                 <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
                     <button
                         class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
@@ -84,10 +103,10 @@
         </div>
         <div class="flex flex-col gap-4">
             <a [href]="'mailto:' + myEmail">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold">{{ myEmail }}</span>
+                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myEmail }}</span>
             </a>
             <a [href]="'tel:' + myPhone">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold">{{ myPhone }}</span>
+                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myPhone }}</span>
             </a>
         </div>
     </div>
