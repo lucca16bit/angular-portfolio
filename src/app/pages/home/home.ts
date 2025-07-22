@@ -12,8 +12,7 @@ import { Skills } from '../../components/skills/skills';
 @Component({
   selector: 'app-home',
   imports: [Navbar, HeroSection, Skills, Experience, AboutMe, Projects, Footer, Contact],
-  templateUrl: './home.html',
-  styleUrl: './home.css'
+  templateUrl: './home.html'
 })
 export class Home {
 

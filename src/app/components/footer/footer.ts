@@ -3,8 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'section-footer',
     imports: [],
-    templateUrl: './footer.html',
-    styleUrl: './footer.css'
+    templateUrl: './footer.html'
 })
 export class Footer {
     @Input() footerTitle: string = '';

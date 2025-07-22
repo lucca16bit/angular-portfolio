@@ -3,8 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'about-me',
     imports: [],
-    templateUrl: './about-me.html',
-    styleUrl: './about-me.css'
+    templateUrl: './about-me.html'
 })
 export class AboutMe {
     @Input() aboutTitle: string = '';

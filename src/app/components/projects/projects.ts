@@ -6,8 +6,7 @@ import { ProjectCard } from '../project-card/project-card';
 @Component({
     selector: 'projects',
     imports: [ProjectCard, CommonModule],
-    templateUrl: './projects.html',
-    styleUrl: './projects.css'
+    templateUrl: './projects.html'
 })
 export class Projects {
     @Input() projectsTitle: string = '';
