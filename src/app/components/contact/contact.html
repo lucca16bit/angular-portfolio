@@ -24,6 +24,11 @@
                 [class]="isValid('description') ? 'border-error-500 placeholder:text-error-500' : 'border-black placeholder:text-neutral-500'"
                 [maxlength]="maxLength"
             ></textarea>
+            <div class="w-full -mb-1.5" *ngIf="isLoading">
+                <div class="h-1.5 w-full bg-neutral-300 overflow-hidden rounded-lg">
+                    <div class="progress w-full h-full bg-black-800 left-right"></div>
+                </div>
+            </div>
             <div class="flex">
                 <div *ngIf="isValid('description')" class="-mt-1 -mb-6">
                     <span class="text-error-500 text-base leading-5 tracking-tight">{{ getErrorMessage('description') }}</span>
@@ -39,7 +44,7 @@
             <button
                 class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:bg-black disabled:active:text-white"
                 (click)="submit()"
-                [disabled]="isBtnDisabled"
+                [disabled]="isBtnDisabled || isLoading"
             ><span>Entrar em contato</span></button>
             <div class="flex gap-6">
                 <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">

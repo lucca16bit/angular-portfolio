@@ -14,8 +14,7 @@ type InputTypes = 'name' | 'email' | 'text';
             multi: true
         }
     ],
-    templateUrl: './input-form.html',
-    styleUrl: './input-form.css'
+    templateUrl: './input-form.html'
 })
 export class InputForm implements ControlValueAccessor {
     @Input() inputName: string = '';
@@ -27,9 +26,11 @@ export class InputForm implements ControlValueAccessor {
     value: string = '';
     onChange: any = () => {};
     onTouched: any = () => {};
+    isDisabled: boolean = false;
 
     onInput(e: Event) {
         const value = (e.target as HTMLInputElement).value;
+        this.value = value;
         this.onChange(value);
     }
 
@@ -38,7 +39,7 @@ export class InputForm implements ControlValueAccessor {
     }
 
     writeValue(value: any): void {
-        this.value = value;
+        this.value = value || '';
     }
 
     registerOnChange(fn: any): void {
@@ -49,5 +50,7 @@ export class InputForm implements ControlValueAccessor {
         this.onTouched = fn;
     }
 
-    setDisabledState(isDisabled: boolean): void {}
+    setDisabledState(isDisabled: boolean): void {
+        this.isDisabled = isDisabled;
+    }
 }

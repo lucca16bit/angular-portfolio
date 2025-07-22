@@ -21,8 +21,9 @@ export class Contact implements OnInit {
     @Input() myEmail: string = '';
     @Input() myPhone: string = '';
 
-    isBtnDisabled: boolean = true;
     showErrorInTextArea: boolean = false;
+    isBtnDisabled: boolean = true;
+    isLoading: boolean = false;
     textAreaErrorMessage: string = '';
     charCount: number = 0;
     maxLength: number = 2000;
@@ -100,19 +101,25 @@ export class Contact implements OnInit {
 
         if (!this.contactForm.valid) {
             return;
-        } else {
-            this.formService.send(
-                this.contactForm.value.name,
-                this.contactForm.value.email,
-                this.contactForm.value.description
-            ).subscribe({
-                next: () => {
-                    alert('Contato enviado! Aguarde o retorno');
-                    this.contactForm.reset();
-                    this.charCount = 0;
-                }
-            });
         }
+
+        this.isLoading = true;
+        this.contactForm.disable();
+
+        this.formService.send(
+            this.contactForm.value.name,
+            this.contactForm.value.email,
+            this.contactForm.value.description
+        ).subscribe({
+            next: () => {
+                alert('Contato enviado! Aguarde o retorno');
+                this.contactForm.enable();
+                this.charCount = 0;
+                this.isLoading = false;
+                this.contactForm.reset();
+            }
+        });
+
     }
 }
 
