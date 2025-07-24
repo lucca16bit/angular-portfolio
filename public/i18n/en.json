@@ -6,6 +6,7 @@
         "outlinedRole": "Developer",
         "based": "Based in ",
         "country": "Brazil",
+        "btn": "See more",
         "description": "I'm a full-stack developer with a focus on web applications. I work with Angular, React, Java and Node.js to build complete solutions, from the front-end to the back-end."
     },
     "navbar": {

@@ -6,6 +6,7 @@
         "outlinedRole": "Full-Stack",
         "based": "de ",
         "country": "Caraguatatuba-SP",
+        "btn": "Ver mais",
         "description": "Sou desenvolvedor full-stack com foco em aplicações web. Trabalho com Angular, React, Java e Node.js para construir soluções completas, do front-end ao back-end."
     },
     "navbar": {
