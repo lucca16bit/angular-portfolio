@@ -1,105 +1,109 @@
 <header
-    class="flex fixed top-0 items-center justify-between md:justify-around w-full h-28 px-6 bg-white z-10 transition-all ease-in-out"
+    class="flex fixed top-0 items-center w-full h-28 px-6 bg-white z-10 transition-all ease-in-out select-none"
     [ngClass]="{ '-translate-y-full': isHidden, 'translate-y-0': !isHidden }"
 >
-    <a class="flex items-center cursor-pointer" (click)="scrollToSection('home')">
-        <img class="w-10" src="/assets/svg/logo.svg" alt="L">
-        <span class="font-bold text-xl leading-6 tracking-tight">&lt;Lucas/&gt;</span>
-    </a>
-    <nav
-        class="nav flex bg-white"
-        [ngClass]="{'active': menuOpen}"
-    >
-        <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all md:hidden">
-            <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
-                {{ 'navbar.lang.title' | translate }}
-                <img
-                    src="assets/svg/chevron-down.svg"
-                    class="ml-2 transition-transform duration-300 active:rotate-180"
-                    [ngClass]="{ 'rotate-180': rotateChevron }"
+    <div class="flex justify-between w-full xl:w-4/5 m-auto">
+        <a class="flex items-center cursor-pointer" (click)="scrollToSection('home')">
+            <img class="w-10" src="/assets/svg/logo.svg" alt="L">
+            <span class="font-bold text-xl leading-6 tracking-tight">&lt;Lucas/&gt;</span>
+        </a>
+        <nav
+            class="nav flex bg-white"
+            [ngClass]="{'active': menuOpen}"
+        >
+            <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all md:hidden">
+                <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
+                    <img class="w-6.5 mr-1 mb-1" src="assets/svg/language.svg">
+                    {{ 'navbar.lang.title' | translate }}
+                    <img
+                        src="assets/svg/chevron-down.svg"
+                        class="ml-2 transition-transform duration-300 active:rotate-180"
+                        [ngClass]="{ 'rotate-180': rotateChevron }"
+                    >
+                </button>
+                <div
+                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded mt-2"
+                    *ngIf="showLangList"
                 >
-            </button>
-            <div
-                class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded mt-2"
-                *ngIf="showLangList"
-            >
-                <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
-                    {{ 'navbar.lang.option-one' | translate }}
-                </button>
-                <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
-                    {{ 'navbar.lang.option-two' | translate }}
-                </button>
+                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
+                        {{ 'navbar.lang.option-one' | translate }}
+                    </button>
+                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
+                        {{ 'navbar.lang.option-two' | translate }}
+                    </button>
+                </div>
             </div>
-        </div>
-        <button
-            class="menu-button block md:hidden"
-            type="button"
-            (click)="toggleMenu()"
-        >
-        </button>
-
-        <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8 bg-white">
-            <li class="hover:underline cursor-pointer">
-                <a class="py-4" (click)="scrollToSection('about-me')">{{ 'navbar.firstTitle' | translate }}</a>
-            </li>
-            <li class="hover:underline cursor-pointer">
-                <a class="py-4" (click)="scrollToSection('skills')">{{ 'navbar.secondTitle' | translate }}</a>
-            </li>
-            <li class="hover:underline cursor-pointer">
-                <a class="py-4" (click)="scrollToSection('projects')">{{ 'navbar.thirdTitle' | translate }}</a>
-            </li>
-            <li class="hover:underline cursor-pointer">
-                <a class="py-4" (click)="scrollToSection('contact')">{{ 'navbar.fourthTitle' | translate }}</a>
-            </li>
-            <li class="block md:hidden">
-                <a
-                    class="group flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
-                    href="assets/docs/cv_LucasGoncalves.pdf"
-                    target="_blank"
-                >
-                    {{ 'navbar.buttonTitle' | translate }}
-                    <app-svg
-                        class="stroke-white group-active:stroke-black"
-                        icon="download"
-                        [size]="22"
-                    ></app-svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="hidden md:flex gap-4 items-center">
-    <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all">
-        <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
-            {{ 'navbar.lang.title' | translate }}
-            <img
-                src="assets/svg/chevron-down.svg"
-                class="ml-2 transition-transform duration-300 active:rotate-180"
-                [ngClass]="{ 'rotate-180': rotateChevron }"
+            <button
+                class="menu-button block md:hidden"
+                type="button"
+                (click)="toggleMenu()"
             >
-        </button>
-        <div
-            class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 mt-2"
-            *ngIf="showLangList"
-        >
-            <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
-                {{ 'navbar.lang.option-one' | translate }}
             </button>
-            <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
-                {{ 'navbar.lang.option-two' | translate }}
-            </button>
+
+            <ul class="nav-list flex mx-auto font-semibold text-xl leading-6 tracking-tight md:gap-8 bg-white">
+                <li class="hover:underline cursor-pointer">
+                    <a class="py-4" (click)="scrollToSection('about-me')">{{ 'navbar.firstTitle' | translate }}</a>
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    <a class="py-4" (click)="scrollToSection('skills')">{{ 'navbar.secondTitle' | translate }}</a>
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    <a class="py-4" (click)="scrollToSection('projects')">{{ 'navbar.thirdTitle' | translate }}</a>
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    <a class="py-4" (click)="scrollToSection('contact')">{{ 'navbar.fourthTitle' | translate }}</a>
+                </li>
+                <li class="block md:hidden">
+                    <a
+                        class="group flex w-full p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2 "
+                        href="assets/docs/cv_LucasGoncalves.pdf"
+                        target="_blank"
+                    >
+                        {{ 'navbar.buttonTitle' | translate }}
+                        <app-svg
+                            class="stroke-white group-active:stroke-black"
+                            icon="download"
+                            [size]="22"
+                        ></app-svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hidden md:flex gap-4 items-center">
+            <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all">
+                <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
+                    <img class="w-6.5 mr-1 mb-1" src="assets/svg/language.svg">
+                    {{ 'navbar.lang.title' | translate }}
+                    <img
+                        src="assets/svg/chevron-down.svg"
+                        class="ml-2 transition-transform duration-300 active:rotate-180"
+                        [ngClass]="{ 'rotate-180': rotateChevron }"
+                    >
+                </button>
+                <div
+                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 mt-2"
+                    *ngIf="showLangList"
+                >
+                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
+                        {{ 'navbar.lang.option-one' | translate }}
+                    </button>
+                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
+                        {{ 'navbar.lang.option-two' | translate }}
+                    </button>
+                </div>
+            </div>
+            <a
+                class="group flex items-center p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2"
+                href="assets/docs/cv_LucasGoncalves.pdf"
+                target="_blank"
+            >
+                {{ 'navbar.buttonTitle' | translate }}
+                <app-svg
+                    class="stroke-white group-active:stroke-black"
+                    icon="download"
+                    [size]="22"
+                ></app-svg>
+            </a>
         </div>
     </div>
-    <a
-        class="group flex items-center p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-xl leading-6 tracking-wide cursor-pointer gap-2"
-        href="assets/docs/cv_LucasGoncalves.pdf"
-        target="_blank"
-    >
-        {{ 'navbar.buttonTitle' | translate }}
-        <app-svg
-            class="stroke-white group-active:stroke-black"
-            icon="download"
-            [size]="22"
-        ></app-svg>
-    </a>
-</div>
 </header>

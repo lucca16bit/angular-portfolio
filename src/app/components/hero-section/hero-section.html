@@ -1,5 +1,5 @@
-<div class="flex xl:w-4/5 mx-auto my-6 xl:my-12 lg:my-26 sm:px-6 lg:px-8">
-    <div class="flex flex-col xl:flex-row w-full">
+<div class="flex w-full min-h-screen xl:-mt-15 sm:px-6 lg:px-0">
+    <div class="flex flex-col xl:flex-row w-full xl:w-4/5 m-auto">
         <div class="flex w-full max-w-[600px] px-6 xl:hidden mx-auto">
             <img src="assets/svg/hero-illustration.svg" alt="Hero Illustration">
         </div>
@@ -19,7 +19,7 @@
             <div class="mt-8">
                 <p class="text-neutral-500 text-base leading-6 tracking-wide">{{ 'hero-section.description' | translate }}</p>
             </div>
-            <div class="flex w-full mt-8">
+            <div class="flex w-full mt-8 xl:mt-30 items-center">
                 <div class="flex gap-6 mx-auto w-full max-w-[1280px]">
                     <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
                         <button
@@ -33,7 +33,6 @@
                             ></app-svg>
                         </button>
                     </a>
-
                     <a href="https://github.com/lucca16bit" target="_blank">
                         <button
                             class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
@@ -70,12 +69,24 @@
                             ></app-svg>
                         </button>
                     </a>
+                    <div class="items-center w-full hidden md:flex">
+                        <div class="h-0.5 bg-black flex-1"></div>
+                        <button
+                            class="flex group ml-4 py-4 px-2 gap-1 text-black hover:text-neutral-500 font-semibold cursor-pointer"
+                            (click)="scrollToSection('skills')"
+                        >
+                            <span class="hover:underline text-base leading-6 tracking-wide">Ver mais</span>
+                            <svg class="w-4 group-hover:animate-bounce" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4.16663L10 15M15 10.8333L10.5893 15.244C10.2638 15.5695 9.73618 15.5695 9.41074 15.244L5 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="hidden xl:flex items-center ml-4">
             <img
-                class="w-[600px]"
+                class="w-[800px]"
                 src="assets/svg/hero-illustration.svg"
                 alt="Hero Illustration"
             >
