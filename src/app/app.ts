@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-root',
@@ -7,5 +8,9 @@ import { RouterOutlet } from '@angular/router';
     templateUrl: './app.html'
 })
 export class App {
-    protected title = 'Portfolio';
+    constructor(private translate: TranslateService) {
+        this.translate.addLangs(['pt', 'en']);
+        this.translate.setDefaultLang('pt');
+        this.translate.use('pt');
+    }
 }

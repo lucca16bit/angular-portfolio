@@ -1,14 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'section-footer',
-    imports: [],
+    imports: [TranslateModule],
     templateUrl: './footer.html'
 })
 export class Footer {
-    @Input() footerTitle: string = '';
-    @Input() footerSubTitle: string = '';
-    @Input() footerIconTitle: string = '';
     menuOpen = false;
 
     scrollToSection(sectionId: string) {

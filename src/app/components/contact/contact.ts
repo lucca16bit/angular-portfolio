@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { ContactForm } from '../../interfaces/form.interface';
 import { FormService } from '../../services/form.service';
@@ -9,15 +10,12 @@ import { Svg } from '../svg/svg';
 
 @Component({
     selector: 'contact',
-    imports: [InputForm, Svg, ReactiveFormsModule, CommonModule],
+    imports: [InputForm, Svg, ReactiveFormsModule, CommonModule, TranslateModule],
     templateUrl: './contact.html',
     styleUrl: './contact.css'
 })
 export class Contact implements OnInit {
     contactForm!: FormGroup<ContactForm>;
-    @Input() contactTitle: string = '';
-    @Input() contactSubTitle: string = '';
-    @Input() contactDescription: string = '';
     @Input() myEmail: string = '';
     @Input() myPhone: string = '';
 
@@ -28,7 +26,11 @@ export class Contact implements OnInit {
     charCount: number = 0;
     maxLength: number = 2000;
 
-    constructor(private formBuilder: FormBuilder, private formService: FormService) {}
+    constructor(
+        private formBuilder: FormBuilder,
+        private formService: FormService,
+        private translate: TranslateService
+    ) {}
 
     ngOnInit(): void {
         this.contactForm = this.formBuilder.group({
@@ -58,33 +60,28 @@ export class Contact implements OnInit {
 
     getErrorMessage(fieldName: string): string {
         const field = this.contactForm.get(fieldName);
+
         if (field && field.errors && (field.dirty || field.touched)) {
+            const displayNames: { [key: string]: string } = {
+                'name': this.translate.instant('contact.errors.name'),
+                'email': this.translate.instant('contact.errors.email'),
+                'description': this.translate.instant('contact.errors.description')
+            };
+
             if (field.errors['required']) {
-                return 'O campo ' + this.getFieldDisplayName(fieldName) + ' é obrigatório';
+                return this.translate.instant('contact.errors.required', { field: displayNames[fieldName] });
             }
-
             if (field.errors['minlength']) {
-                return 'O campo ' + this.getFieldDisplayName(fieldName) + ' deve ter pelo menos 2 caracteres';
+                return this.translate.instant('contact.errors.minlength', { field: displayNames[fieldName], min: field.errors['minlength'].requiredLength });
             }
-
-            if (field.errors['maxLength']) {
-                return 'O campo ' + this.getFieldDisplayName(fieldName) + ' não pode ultrapassar de 100 caracteres';
+            if (field.errors['maxlength']) {
+                return this.translate.instant('contact.errors.maxlength', { field: displayNames[fieldName], max: field.errors['maxlength'].requiredLength });
             }
-
             if (field.errors['email']) {
-                return 'Formato de E-mail inválido';
+                return this.translate.instant('contact.errors.invalidMail');
             }
         }
         return '';
-    }
-
-    private getFieldDisplayName(fieldName: string): string {
-        const displayNames: { [key: string]: string } = {
-            'name': 'nome',
-            'email': 'e-mail',
-            'description': 'descrição'
-        };
-        return displayNames[fieldName];
     }
 
     updateCharCount(value: string): void {

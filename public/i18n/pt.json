@@ -1,0 +1,113 @@
+{
+    "hero-section": {
+        "greeting": "Olá! sou ",
+        "username": "Lucas Gonçalves",
+        "areaTitle": "Desenvolvedor ",
+        "outlinedRole": "Full-Stack",
+        "based": "de ",
+        "country": "Caraguatatuba-SP",
+        "description": "Sou desenvolvedor full-stack com foco em aplicações web. Trabalho com Angular, React, Java e Node.js para construir soluções completas, do front-end ao back-end."
+    },
+    "navbar": {
+        "firstTitle": "Sobre mim",
+        "secondTitle": "Skills",
+        "thirdTitle": "Projetos",
+        "fourthTitle": "Contato",
+        "buttonTitle": "Currículo",
+        "lang": {
+            "title": "Idioma",
+            "option-one": "Português",
+            "option-two": "Inglês"
+        }
+    },
+    "skills": {
+        "title": "Minhas ",
+        "strong": "Skills"
+    },
+    "experiences": {
+        "title": "Minhas ",
+        "strong": "Experiências"
+    },
+    "experiences-card": {
+        "first-experience-card": {
+            "title": "Desenvolvedor Back-End no Projeto Front-end Fusion",
+            "subTitle": "Voluntário",
+            "description": "No Projeto Front-End Fusion, atuo como Desenvolvedor voluntário Back-End, focando na implementação de sistemas back-end para as aplicações desenvolvidas pela comunidade. Estou participando da construção de funcionalidades, aprendendo sobre boas práticas de programação e contribuindo com o que estou estudando. Essa experiência tem sido importante para colocar em prática meus conhecimentos em projetos reais e evoluir como profissional na área.",
+            "initialDate": "Jun 2025",
+            "endDate": "Até o momento"
+        },"second-experience-card": {
+            "title": "Desenvolvedor Front-End no Grupo Nós do Morro",
+            "subTitle": "Voluntário",
+            "description": "Participei do projeto como desenvolvedor voluntário no projeto de criação do site institucional da ONG. Fui responsável pela construção da interface utilizando HTML, CSS e JavaScript, focando em acessibilidade, responsividade e organização do conteúdo. Essa experiência me permitiu aplicar meus conhecimentos na prática e contribuir com uma causa social.",
+            "initialDate": "Dez 2024",
+            "endDate": "Mar 2025"
+        },"third-experience-card": {
+            "title": "Assistente de TI na Prefeitura de Caraguatatuba",
+            "subTitle": "Estagiário",
+            "description": "Como Assistente de TI, prestei suporte técnico a professores e equipe administrativa, garantindo o bom funcionamento dos recursos de informática nas salas de aula e setores administrativos. Realizei manutenção de computadores e periféricos, solucionei problemas de hardware e software, e encaminhei demandas mais complexas para a equipe de Analistas da SEDUC. Minha atuação contribuiu para um ambiente tecnológico mais estável e acessível nas escolas da rede pública.",
+            "initialDate": "Set 2022",
+            "endDate": "Set 2024"
+        }
+    },
+    "about": {
+        "title": "Sobre ",
+        "strong": "Mim",
+        "firstParagraph": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais que unem funcionalidade, performance e uma boa experiência para o usuário. Trabalho com tecnologias como Java(Spring Boot), Node.js(Express), Angular e React, sempre buscando evoluir como profissional e entregar aplicações modernas, escaláveis e bem construídas.",
+        "secondParagraph": "Minha jornada com a programação começou há alguns anos, e desde então, sigo me desafiando constantemente. Venho estudando novas ferramentas, construindo projetos pessoais e contribuindo com o que aprendo. Tenho um grande interesse por back-end, mas também curto trabalhar com interfaces bem pensadas e responsivas no front-end.",
+        "thirdParagraph": "Atualmente, foco em desenvolver aplicações completas, explorando desde a modelagem de APIs até o design de interfaces, com boas práticas de código, versionamento e segurança. Estou sempre buscando aprender, seja com a comunidade, com cursos ou através da prática. Quando não estou programando, gosto de jogar, curtir um bom anime ou tocar na minha guitarra haha. Também amo aprender algo novo sobre astronomia e tecnologia."
+    },
+    "projects": {
+        "title": "Meus ",
+        "strong": "Projetos",
+        "project-card": {
+            "first-project-card": {
+                "title": "todo.it",
+                "description": "todo.it é uma aplicação web desenvolvida com Angular e Tailwind para gerenciamento de tarefas. A interface permite adicionar, editar, marcar tarefas como concluídas e remover tarefas, além de filtrar tarefas por prioriedade (Low, Medium, High) de forma simples e intuitiva. A aplicação tambbém conta com autenticação de usuários via JWT, garantindo que o usuário gerencie suas tarefas de forma segura",
+                "link": "Abrir",
+                "repo": "Repositório"
+            },
+            "second-project-card": {
+                "title": "API Rest - todo.it",
+                "description": "Este projeto é uma API REST desenvolvida para o projeto todo.it. A aplicação oferece autenticação segura com JWT, garantindo que cada  usuário gerencie suas tarefas de forma segura. Utiliza banco de dados MySQL com versionamento de migrations por Flyway. Conta com documentação interativa via Swagger, seguindo boas práticas de arquitetura, organização de camadas e tratamento de erros.",
+                "link": "Abrir",
+                "repo": "Repositório"
+            },
+            "third-project-card": {
+                "title": "API Rest - Star Wars",
+                "description": "API Rest desenvolvida com Node.js, TypeScript e Express, focada no gerenciamento de dados do universo Star Wars, como personagens, naves, planetas e sistemas estelares. Conta com autenticação de usuários via JWT, banco de dados MySQL com Prisma para o mapeamento e migrations, e documentação com Swagger. A aplicação segue boas práticas de organização em camadas, tratamento de erros e segurança, oferecendo endpoints protegidos e operações CRUD para cada entidade.",
+                "link": "Abrir",
+                "repo": "Repositório"
+            },
+            "fourth-project-card": {
+                "title": "Notes",
+                "description": "Aplicativo web criado com React e Tailwind, permitindo registrar notas em texto ou por áudio convertido automaticamente em texto via SpeechRecognition API. O projeto usa componentes acessíveis do Radix UI, ícones do Lucide e notificações com Sonner. As notas são armazenadas localmente no navegador. É uma aplicação leve, moderna e prática, que reforça seu conhecimento em React, Tailwind e consumo de APIs externas",
+                "link": "Abrir",
+                "repo": "Repositório"
+            }
+        }
+    },
+    "contact": {
+        "title": "Vamos conversar!",
+        "subTitle": "",
+        "description": "Busco transformar ideias em soluções digitais modernas, funcionais e que realmente façam a diferença na experiência do usuário.",
+        "button": "Entrar em Contato",
+        "input": {
+            "name": "Seu nome",
+            "email": "E-mail (Ex: johndoe@gmail.com)",
+            "description": "Em que posso te ajudar?*"
+        },
+        "errors": {
+            "name": "nome",
+            "email": "e-mail",
+            "description": "mensagem",
+            "required": "O campo de {{field}} é obrigatório",
+            "minlength": "O campo {{field}} deve ter pelo menos {{min}} caracteres",
+            "maxlength": "O campo {{field}} não pode ultrapassar de {{max}} caracteres",
+            "invalidMail": "Formato de E-mail inválido"
+        }
+    },
+    "footer": {
+        "title": "2025 Lucas Gonçalves",
+        "subTitle": "Todos os direitos reservados"
+    }
+}

@@ -1,15 +1,15 @@
 <div class="flex w-full h-auto mx-auto py-12 break-keep border-2 ">
     <div class="flex flex-col md:flex-row xl:flex-col justify-center gap-8 w-full h-auto mx-6">
         <div class="md:w-[525px] h-96 border-2 rounded-4xl xl:m-0 overflow-hidden">
-            <img class="w-full h-full object-cover transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80" [src]="projectImageUrl">
+            <img class="w-full h-full object-cover transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80" [src]="imageUrl">
         </div>
         <div class="flex flex-col md:w-2/3 h-auto gap-6">
             <div class="text-white">
-                <span class="text-xl leading-6 md:text-[32px] md:leading-10 font-bold tracking-tight">{{ projectTitle }}</span>
+                <span class="text-xl leading-6 md:text-[32px] md:leading-10 font-bold tracking-tight">{{ title | translate }}</span>
             </div>
             <div class="flex flex-col w-full xl:w-xl h-auto text-neutral-500 gap-4">
                 <p class="text-base leading-6 tracking-wide break-keep">
-                    {{ projectDescription }}
+                    {{ description | translate }}
                 </p>
             </div>
             <div class="flex flex-col w-full gap-6">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="flex gap-4 items-center">
                     <a class="group flex gap-2" [href]="demo" target="_blank">
-                        <span class="text-white group-hover:text-neutral">Abrir</span>
+                        <span class="text-white group-hover:text-neutral">{{ demoTitle | translate }}</span>
                         <app-svg
                             class="text-white group-hover:text-neutral"
                             icon="link"
@@ -36,7 +36,7 @@
                         />
                     </a>
                     <a class="group flex gap-2" [href]="repository" target="_blank">
-                        <span class="text-white group-hover:text-neutral">Repositório</span>
+                        <span class="text-white group-hover:text-neutral">{{ repoTitle | translate }}</span>
                         <app-svg
                             class="text-white group-hover:text-neutral"
                             icon="link"

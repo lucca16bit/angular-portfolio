@@ -1,15 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'about-me',
-    imports: [],
+    imports: [TranslateModule],
     templateUrl: './about-me.html'
 })
 export class AboutMe {
-    @Input() aboutTitle: string = '';
-    @Input() aboutStrong: string = '';
     @Input() aboutImageUrl: string = '';
-    @Input() firstParagraph: string = '';
-    @Input() secondParagraph: string = '';
-    @Input() thirdParagraph: string = '';
 }

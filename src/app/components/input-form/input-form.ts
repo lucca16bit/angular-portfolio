@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 type InputTypes = 'name' | 'email' | 'text';
 
 @Component({
     selector: 'input-form',
-    imports: [ReactiveFormsModule, CommonModule],
+    imports: [ReactiveFormsModule, CommonModule, TranslateModule],
     providers: [
         {
             provide: NG_VALUE_ACCESSOR,

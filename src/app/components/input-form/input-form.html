@@ -7,7 +7,7 @@
             <input
                 class="w-full h-15 rounded-lg border-none focus:outline-none p-4 text-base leading-5 tracking-tight"
                 [class]="showError ? 'placeholder:text-error-500' : 'placeholder:text-neutral-500'"
-                [placeholder]="placeholder"
+                [placeholder]="placeholder | translate"
                 [type]="type"
                 [value]="value"
                 [disabled]="isDisabled"

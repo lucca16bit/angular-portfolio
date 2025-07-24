@@ -1,12 +1,13 @@
-import { Component, Input } from '@angular/core';
-import { ExperienceCards } from "../experience-cards/experience-cards";
+import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+
+import { ExperienceCards } from '../experience-cards/experience-cards';
 
 @Component({
     selector: 'experience',
-    imports: [ExperienceCards],
+    imports: [ExperienceCards, TranslateModule],
     templateUrl: './experience.html'
 })
 export class Experience {
-    @Input() title: string = '';
-    @Input() strong: string = '';
+    
 }

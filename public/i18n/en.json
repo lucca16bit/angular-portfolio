@@ -1,0 +1,113 @@
+{
+    "hero-section": {
+        "greeting": "Hello, I'm ",
+        "username": "Lucas Gonçalves",
+        "areaTitle": "Full-Stack ",
+        "outlinedRole": "Developer",
+        "based": "Based in ",
+        "country": "Brazil",
+        "description": "I'm a full-stack developer with a focus on web applications. I work with Angular, React, Java and Node.js to build complete solutions, from the front-end to the back-end."
+    },
+    "navbar": {
+        "firstTitle": "About me",
+        "secondTitle": "Skills",
+        "thirdTitle": "Projects",
+        "fourthTitle": "Contact me",
+        "buttonTitle": "Resume",
+        "lang": {
+            "title": "Language",
+            "option-one": "Portuguese",
+            "option-two": "English"
+        }
+    },
+    "skills": {
+        "title": "My ",
+        "strong": "Skills"
+    },
+    "experiences": {
+        "title": "My ",
+        "strong": "Experiences"
+    },
+    "experiences-card": {
+        "first-experience-card": {
+            "title": "Back-End Developer At Projeto Front-End Fusion",
+            "subTitle": "Volunteer",
+            "description": "As a volunteer back-end developer in the Front-End Fusion Project, I focus on implementing back-end systems for applications developed by the community. I am taking part in building features, learning about good programming practices, and applying what I am studying. This experience has been invaluable in applying my knowledge to real projects and growing as a professional in the field.",
+            "initialDate": "June 2025",
+            "endDate": "Until now"
+        },"second-experience-card": {
+            "title": "Front-End Developer At Grupo Nós do Morro",
+            "subTitle": "Volunteer",
+            "description": "As a volunteer front-end developer, I participated in creating the organization's institutional website. Using HTML, CSS, and JavaScript, I built the interface with a focus on accessibility, responsiveness, and content organization. This experience allowed me to apply my knowledge to a real-world project while contributing to a social cause.",
+            "initialDate": "Dec 2024",
+            "endDate": "Mar 2025"
+        },"third-experience-card": {
+            "title": "IT Assistant At Caraguatatuba City Hall",
+            "subTitle": "Trainee",
+            "description": "As an IT assistant, I provided technical support to teachers and administrative staff, ensuring the efficient operation of computer resources in classrooms and administrative offices. I maintained computers and peripherals, solved hardware and software problems, and referred more complex issues to SEDUC's team of analysts. My work helped create a more stable and accessible technological environment in public schools.",
+            "initialDate": "Sep 2022",
+            "endDate": "Sep 2024"
+        }
+    },
+    "about": {
+        "title": "About ",
+        "strong": "Me",
+        "firstParagraph": "I'm a full-stack developer passionate about creating digital solutions that combine functionality, performance, and a positive user experience. I work with Java (Spring Boot), Node.js (Express), Angular, and React. I am always seeking to evolve as a professional and deliver modern, scalable, well-built applications.",
+        "secondParagraph": "I began my journey with programming a few years ago, and I've been challenging myself ever since. I've studied new tools, built personal projects, and shared what I've learned. I'm interested in both the back end and well-thought-out, responsive front-end interfaces.",
+        "thirdParagraph": "Currently, I am focusing on developing complete applications. I am exploring everything from modeling APIs to designing interfaces with good code, versioning, and security practices. I'm always looking to learn, whether through the community, courses, or practice. Outside of programming, I enjoy playing games, watching anime, and playing my guitar. I also love learning new things about astronomy and technology."
+    },
+    "projects": {
+        "title": "My ",
+        "strong": "Projects",
+        "project-card": {
+            "first-project-card": {
+                "title": "todo.it",
+                "description": "todo.it is a web application developed with Angular and Tailwind for task management. Its interface allows you to easily and intuitively add, edit, mark as completed, and remove tasks, as well as filter them by priority (low, medium, or high). The application also features user authentication via JWT to ensure that users can securely manage their tasks.",
+                "link": "Demo",
+                "repo": "Repository"
+            },
+            "second-project-card": {
+                "title": "API Rest - todo.it",
+                "description": "This project is a REST API developed for todo.it. The application offers secure authentication with JSON Web Tokens (JWT), ensuring that each user can securely manage their tasks. It uses a MySQL database with Flyway for versioning of migrations. The application has interactive documentation via Swagger and follows good architectural practices, including layer organization and error handling.",
+                "link": "Demo",
+                "repo": "Repository"
+            },
+            "third-project-card": {
+                "title": "API Rest - Star Wars",
+                "description": "The REST API was developed with Node.js, TypeScript, and Express. It is focused on managing data from the Star Wars universe, including characters, ships, planets, and star systems. The application features user authentication via JWT, a MySQL database with Prisma for mapping and migrations, and Swagger-based documentation. The application adheres to best practices for layered organization, error handling, and security. It offers protected endpoints and CRUD operations for each entity.",
+                "link": "Demo",
+                "repo": "Repository"
+            },
+            "fourth-project-card": {
+                "title": "Notes",
+                "description": "This web application was created with React and Tailwind. It allows you to record notes in text or audio, which is automatically converted into text via the Speech Recognition API. The project uses Radix UI components, Lucide icons, and Sonner notifications, all of which are accessible. Notes are stored locally in the browser. This lightweight, modern, and practical application will reinforce your knowledge of React, Tailwind, and consuming external APIs.",
+                "link": "Demo",
+                "repo": "Repository"
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's talk!",
+        "subTitle": "",
+        "description": "My goal is to transform ideas into modern, functional digital solutions that really make a difference to the user experience.",
+        "button": "Get in Touch",
+        "input": {
+            "name": "Your name",
+            "email": "Email (Example: johndoe@gmail.com)",
+            "description": "How can I help?*"
+        },
+        "errors": {
+            "name": "name",
+            "email": "email",
+            "description": "message",
+            "required": "The field {{field}} is required",
+            "minlength": "The field {{field}} must be at least {{min}} characters",
+            "maxlength": "The field {{field}} cannot exceed {{max}} characters",
+            "invalidMail": "Invalid email format"
+        }
+    },
+    "footer": {
+        "title": "2025 Lucas Gonçalves",
+        "subTitle": "All rights reserved"
+    }
+}

@@ -4,7 +4,7 @@
             formControlName="name"
             inputName="name"
             type="name"
-            placeholder="Seu nome"
+            [placeholder]="'contact.input.name'"
             [showError]="isValid('name')"
             [errorMessage]="getErrorMessage('name')"
         />
@@ -12,14 +12,14 @@
             formControlName="email"
             inputName="email"
             type="email"
-            placeholder="E-mail (Ex: johndoe@gmail.com)"
+            [placeholder]="'contact.input.email'"
             [showError]="isValid('email')"
             [errorMessage]="getErrorMessage('email')"
         />
         <div class="w-full h-auto -mb-2">
             <textarea
                 formControlName="description"
-                placeholder="Em que posso te ajudar?*"
+                [placeholder]="'contact.input.description' | translate"
                 class="w-full h-30 p-4 rounded-lg border-2 border-black focus:outline-none text-base leading-5 tracking-tight"
                 [class]="isValid('description') ? 'border-error-500 placeholder:text-error-500' : 'border-black placeholder:text-neutral-500'"
                 [maxlength]="maxLength"
@@ -45,7 +45,7 @@
                 class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:bg-black disabled:active:text-white"
                 (click)="submit()"
                 [disabled]="isBtnDisabled || isLoading"
-            ><span>Entrar em contato</span></button>
+            ><span>{{ 'contact.button' | translate }}</span></button>
             <div class="flex gap-6">
                 <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
                     <button
@@ -100,11 +100,11 @@
     </form>
     <div class="flex flex-col w-full gap-6 ">
         <div class="flex flex-col gap-2">
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ contactTitle }}</span>
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ contactSubTitle }}</span>
+            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.title' | translate }}</span>
+            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.subTitle' | translate }}</span>
         </div>
         <div class="flex">
-            <span class="text-base leading-6 tracking-wide text-neutral-500">{{ contactDescription }}</span>
+            <span class="text-base leading-6 tracking-wide text-neutral-500">{{ 'contact.description' | translate }}</span>
         </div>
         <div class="flex flex-col gap-4">
             <a [href]="'mailto:' + myEmail">

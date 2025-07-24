@@ -9,25 +9,25 @@
 >
      <div class="flex flex-col w-full h-auto">
         <div class="flex w-full h-auto flex-col items-start py-4 px-4 xl:flex-row xl:justify-between xl:items-center">
-            <div class="flex items-center gap-4 w-auto">
+            <div class="flex items-start gap-4 w-auto">
                 <img [src]="imageUrl" alt="" class="w-10 h-10 object-contain" />
                 <div class="flex flex-col">
                     <span class="text-xl leading-6 md:text-2xl md:leading-7 tracking-tight text-white font-semibold">
-                        {{ title }}
+                        {{ title | translate }}
                     </span>
-                    <span class="text-base leading-5 tracking-tight text-neutral-300 font-semibold mt-2">
-                        {{ subTitle }}
+                    <span class="text-base leading-5 tracking-tight text-neutral-300 font-semibold">
+                        {{ subTitle | translate }}
                     </span>
                 </div>
             </div>
             <div class="flex items-center text-base leading-5 tracking-tight text-neutral-300 font-semibold mt-4 xl:mt-0">
-                <span>{{ initialDate }}</span>
+                <span>{{ initialDate | translate }}</span>
                 <span class="mx-1">-</span>
-                <span>{{ endDate }}</span>
+                <span>{{ endDate | translate }}</span>
             </div>
         </div>
         <div class="w-full h-auto px-4 text-neutral-300 my-4">
-            <p class="text-base leading-6 tracking-wide">{{ description }}</p>
+            <p class="text-base leading-6 tracking-wide">{{ description | translate }}</p>
         </div>
     </div>
 </div>
