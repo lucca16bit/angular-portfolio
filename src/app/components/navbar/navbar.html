@@ -22,13 +22,13 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded mt-2"
+                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 ml-5"
                     *ngIf="showLangList"
                 >
-                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
+                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
                         {{ 'navbar.lang.option-one' | translate }}
                     </button>
-                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
+                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('en')">
                         {{ 'navbar.lang.option-two' | translate }}
                     </button>
                 </div>
@@ -69,7 +69,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="hidden md:flex gap-4 items-center">
+        <div class="hidden md:flex items-center">
             <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all">
                 <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
                     <img class="w-6.5 mr-1 mb-1" src="assets/svg/language.svg">
@@ -81,13 +81,13 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 mt-2"
+                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 ml-5"
                     *ngIf="showLangList"
                 >
-                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('pt')">
+                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
                         {{ 'navbar.lang.option-one' | translate }}
                     </button>
-                    <button class="px-4 py-2 w-full text-left hover:bg-neutral hover:text-white cursor-pointer" (click)="changeLang('en')">
+                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('en')">
                         {{ 'navbar.lang.option-two' | translate }}
                     </button>
                 </div>

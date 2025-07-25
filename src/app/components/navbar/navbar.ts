@@ -26,6 +26,8 @@ export class Navbar {
 
     toggleMenu() {
         this.menuOpen = !this.menuOpen;
+        this.rotateChevron = false;
+        this.showLangList = false;
     }
 
     changeLang(lang: string) {

@@ -1,9 +1,9 @@
-import { Component, HostListener } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { Skill } from '../../interfaces/skill.interface';
 import { Svg } from '../svg/svg';
-import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'skills',
@@ -13,6 +13,14 @@ import { CommonModule } from '@angular/common';
 
 export class Skills {
     svgSize: number = 50;
+
+    constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+    ngOnInit() {
+        if (isPlatformBrowser(this.platformId)) {
+            this.updateSvgSize();
+        }
+    }
 
     skills: Skill[] = [
         { icon: 'java', title: 'Java' },
@@ -44,10 +52,6 @@ export class Skills {
 
     @HostListener('window:resize')
     onResize() {
-        this.updateSvgSize();
-    }
-
-    ngOnInit() {
         this.updateSvgSize();
     }
 
