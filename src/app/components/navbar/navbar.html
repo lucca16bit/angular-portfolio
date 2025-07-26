@@ -22,7 +22,7 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 ml-5"
+                    class="flex flex-col items-center text-left absolute top-full right-5 bg-white shadow-md rounded z-10"
                     *ngIf="showLangList"
                 >
                     <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
@@ -81,13 +81,13 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center text-left absolute top-full left-0 bg-white shadow-md rounded z-10 ml-5"
+                    class="flex flex-col items-center absolute top-full right-5 bg-white shadow-md rounded z-10"
                     *ngIf="showLangList"
                 >
-                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
+                    <button class="px-4 py-2 w-full text-right text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
                         {{ 'navbar.lang.option-one' | translate }}
                     </button>
-                    <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('en')">
+                    <button class="px-4 py-2 w-full text-right text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('en')">
                         {{ 'navbar.lang.option-two' | translate }}
                     </button>
                 </div>
