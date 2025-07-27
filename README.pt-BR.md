@@ -1,4 +1,4 @@
-[Read in English](README.en-US.md)
+[Read in English](README.md)
 
 # Meu portifólio pessoal
 
