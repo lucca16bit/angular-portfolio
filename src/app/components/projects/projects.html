@@ -9,11 +9,15 @@
             [title]="project.title"
             [imageUrl]="project.imageUrl"
             [description]="project.description"
-            [demoTitle]="'projects.project-card.first-project-card.link'"
-            [repoTitle]="'projects.project-card.first-project-card.repo'"
+            [modalDescription]="project.modalDescription"
+            [techsUsed]="project.techsUsed"
+            [techs]="project.techs"
+            [demoTitle]="'projects.demo'"
+            [repoTitle]="'projects.repo'"
+            [apiTitle]="'projects.api'"
             [demo]="project.demo"
             [repository]="project.repository"
-            [techs]="project.techs"
+            [api]="project.apiRepository || ''"
         />
     </div>
     <div class="flex w-full justify-center mx-auto mt-5">
@@ -24,7 +28,7 @@
             type="button"
             (click)="submit()"
         >
-            <span>ver mais</span>
+            <span>{{ 'projects.load-more' | translate }}</span>
             <img src="assets/svg/down.svg" alt="Down">
         </button>
     </div>

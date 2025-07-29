@@ -1,0 +1,11 @@
+<ng-container *ngIf="show">
+    <div class="min-w-4/5 fixed bg-black-800 rounded-xl shadow-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-11">
+        <button
+            class="absolute top-5 right-6 text-white hover:text-neutral-500 text-xl font-bold cursor-pointer"
+            (click)="close()"
+            type="button"
+        >X</button>
+        <ng-content></ng-content>
+    </div>
+    <div class="fixed w-screen h-screen left-0 top-0 opacity-50 bg-black z-10" (click)="close()"></div>
+</ng-container>

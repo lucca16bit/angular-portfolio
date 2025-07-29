@@ -60,30 +60,46 @@
     "projects": {
         "title": "Meus ",
         "strong": "Projetos",
+        "demo": "Visualizar",
+        "repo": "Repositório",
+        "api": "API",
+        "load-more": "Ver mais",
         "project-card": {
             "first-project-card": {
                 "title": "todo.it",
-                "description": "todo.it é uma aplicação web desenvolvida com Angular e Tailwind para gerenciamento de tarefas. A interface permite adicionar, editar, marcar tarefas como concluídas e remover tarefas, além de filtrar tarefas por prioriedade (Low, Medium, High) de forma simples e intuitiva. A aplicação tambbém conta com autenticação de usuários via JWT, garantindo que o usuário gerencie suas tarefas de forma segura",
-                "link": "Abrir",
-                "repo": "Repositório"
+                "description": "todo.it é uma aplicação full-stack para organizar tarefas, com Angular + Tailwind no front-end e Java + Spring Boot no back-end. Permite gerenciar tarefas com autenticação segura, filtragem por prioridade e uma interface leve e responsiva.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "todo.it é uma aplicação full-stack para gerenciamento de tarefas, desenvolvido com front-end em Angular + Tailwind e back-end em Java + Spring Boot. O aplicativo permite aos usuários adicionar, editar, excluir e filtrar tarefas por prioridade (baixo, médio, alto), com autenticação via JWT garantindo acesso seguro aos dados. A API REST utiliza MySQL com migrations gerenciadas por Flyway, e conta com documentação via Swagger. O projeto segue boas práticas de arquitetura e entrega uma experiência fluida e responsiva.",
+                    "techs": "Tecnologias utilizadas"
+                }
             },
             "second-project-card": {
-                "title": "API Rest - todo.it",
-                "description": "Este projeto é uma API REST desenvolvida para o projeto todo.it. A aplicação oferece autenticação segura com JWT, garantindo que cada  usuário gerencie suas tarefas de forma segura. Utiliza banco de dados MySQL com versionamento de migrations por Flyway. Conta com documentação interativa via Swagger, seguindo boas práticas de arquitetura, organização de camadas e tratamento de erros.",
-                "link": "Abrir",
-                "repo": "Repositório"
+                "title": "Agents Live",
+                "description": "Agents Live é uma aplicação full-stack onde os usuários criam salas de conversa, enviam perguntas por texto e gravam áudios que são processados por uma IA para gerar respostas em tempo real.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "Agents Live é uma aplicação full-stack que simula salas de perguntas em tempo real com suporte a voz. O usuário pode criar uma sala, registrar perguntas via texto ou gravar áudios diretamente no navegador. Esses áudios são enviados para o back-end, onde são processados e transformados em texto para alimentar uma IA que responde automaticamente. O front-end foi desenvolvido com React + TypeScript, utilizando Vite para o build e React Router para navegação entre as rotas. A interface é organizada em três fluxos principais: criação de sala, visualização de perguntas e gravação de áudio. O projeto utiliza o MediaRecorder para capturar áudio pelo navegador, que é enviado periodicamente para a API. No back-end (Desenvolvido com Node.js + Fastify), há rotas REST para gerenciamento de salas e perguntas e uma rota dedicada para upload das gravações.",
+                    "techs": "Tecnologias utilizadas"
+                }
             },
             "third-project-card": {
-                "title": "API Rest - Star Wars",
-                "description": "API Rest desenvolvida com Node.js, TypeScript e Express, focada no gerenciamento de dados do universo Star Wars, como personagens, naves, planetas e sistemas estelares. Conta com autenticação de usuários via JWT, banco de dados MySQL com Prisma para o mapeamento e migrations, e documentação com Swagger. A aplicação segue boas práticas de organização em camadas, tratamento de erros e segurança, oferecendo endpoints protegidos e operações CRUD para cada entidade.",
-                "link": "Abrir",
-                "repo": "Repositório"
+                "title": "Star Wars API",
+                "description": "Uma API REST desenvolvida em Node.js com TypeScript para gerenciar elementos do universo Star Wars. É um sistema completo com autenticação JWT, CRUD para personagens, naves espaciais, planetas e sistemas estelares, utilizando Prisma ORM com MySQL e documentação Swagger.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "Essa é uma API REST que desenvolvi para gerenciar dados do universo Star Wars — personagens, naves, planetas e sistemas estelares. A ideia foi criar um sistema completo de cadastro, organizado em uma arquitetura escalável, seguindo boas práticas de back-end com Node.js e TypeScript. Implementei autenticação com JWT, rotas protegidas, validações de entrada, tratamento de erros padronizado e documentação interativa com Swagger. Usei o Prisma como ORM para as migrations conectado ao MySQL",
+                    "techs": "Tecnologias utilizadas"
+                }
             },
             "fourth-project-card": {
-                "title": "Notes",
-                "description": "Aplicativo web criado com React e Tailwind, permitindo registrar notas em texto ou por áudio convertido automaticamente em texto via SpeechRecognition API. O projeto usa componentes acessíveis do Radix UI, ícones do Lucide e notificações com Sonner. As notas são armazenadas localmente no navegador. É uma aplicação leve, moderna e prática, que reforça seu conhecimento em React, Tailwind e consumo de APIs externas",
-                "link": "Abrir",
-                "repo": "Repositório"
+                "title": "Voll.med API",
+                "description": "Voll.med API é uma aplicação REST feita com Spring Boot para gerenciar pacientes, médicos e consultas. Com ela, é possível cadastrar, atualizar e excluir dados, além de realizar agendamentos e cancelamentos de consultas médicas de forma simples e segura.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "Voll.med é uma aplicação API REST desenvolvida com Java e Spring Boot para gerenciar uma clínica médica fictícia. Com endpoints organizados para pacientes, médicos e consultas, a API permite operações completas de cadastro, edição, listagem e exclusão, além de agendamento e cancelamento de consultas. A autenticação é feita via JWT, garantindo segurança no acesso às rotas protegidas. Toda a documentação é gerada automaticamente com Swagger, e o projeto segue uma estrutura limpa, modular e com boas práticas de organização e validação.",
+                    "techs": "Tecnologias utilizadas"
+                }
             }
         }
     },

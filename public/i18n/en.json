@@ -65,25 +65,11 @@
                 "title": "todo.it",
                 "description": "todo.it is a web application developed with Angular and Tailwind for task management. Its interface allows you to easily and intuitively add, edit, mark as completed, and remove tasks, as well as filter them by priority (low, medium, or high). The application also features user authentication via JWT to ensure that users can securely manage their tasks.",
                 "link": "Demo",
-                "repo": "Repository"
-            },
-            "second-project-card": {
-                "title": "API Rest - todo.it",
-                "description": "This project is a REST API developed for todo.it. The application offers secure authentication with JSON Web Tokens (JWT), ensuring that each user can securely manage their tasks. It uses a MySQL database with Flyway for versioning of migrations. The application has interactive documentation via Swagger and follows good architectural practices, including layer organization and error handling.",
-                "link": "Demo",
-                "repo": "Repository"
-            },
-            "third-project-card": {
-                "title": "API Rest - Star Wars",
-                "description": "The REST API was developed with Node.js, TypeScript, and Express. It is focused on managing data from the Star Wars universe, including characters, ships, planets, and star systems. The application features user authentication via JWT, a MySQL database with Prisma for mapping and migrations, and Swagger-based documentation. The application adheres to best practices for layered organization, error handling, and security. It offers protected endpoints and CRUD operations for each entity.",
-                "link": "Demo",
-                "repo": "Repository"
-            },
-            "fourth-project-card": {
-                "title": "Notes",
-                "description": "This web application was created with React and Tailwind. It allows you to record notes in text or audio, which is automatically converted into text via the Speech Recognition API. The project uses Radix UI components, Lucide icons, and Sonner notifications, all of which are accessible. Notes are stored locally in the browser. This lightweight, modern, and practical application will reinforce your knowledge of React, Tailwind, and consuming external APIs.",
-                "link": "Demo",
-                "repo": "Repository"
+                "repo": "Repository",
+                "modal": {
+                    "subTitle": "",
+                    "techs": "Technologies used"
+                }
             }
         }
     },
