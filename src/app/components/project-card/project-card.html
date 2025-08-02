@@ -44,15 +44,15 @@
 </div>
 
 <modal [(show)]="showModal">
-    <div class="flex flex-col lg:flex-row w-full max-h-[70vh] overflow-hidden">
-        <div class="h-48 lg:w-1/2 lg:h-auto flex-shrink-0">
-            <img class="w-full h-full object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-t-none" [src]="imageUrl">
+    <div class="flex flex-col lg:flex-row w-full custom-scrollbar">
+        <div class="h-48 lg:w-1/2 lg:h-auto flex-shrink-0 p-6">
+            <img class="w-full h-full object-cover rounded-xl" [src]="imageUrl">
         </div>
-        <div class="flex flex-col gap-4 p-6 lg:w-1/2 overflow-y-auto custom-scrollbar">
+        <div class="flex flex-col gap-4 p-6 lg:w-1/2">
             <span class="text-white text-xl leading-6 md:text-[32px] md:leading-10 font-bold tracking-tight">
                 {{ title | translate }}
             </span>
-            <p class="text-base leading-6 tracking-wide break-keep text-neutral-400">
+            <p class="text-base leading-6 tracking-wide break-keep text-neutral-500">
                 {{ modalDescription | translate }}
             </p>
 
@@ -62,23 +62,23 @@
                 </span>
 
                  <div class="flex flex-wrap gap-2 w-full">
-                    <div *ngFor="let tech of techs" class="group flex items-center p-2 px-3 bg-black rounded-md hover:bg-neutral-500 transition-colors cursor-pointer gap-2">
+                    <div *ngFor="let tech of techs" class="group flex items-center p-2 px-3 bg-neutral rounded-md hover:bg-black-800 transition-colors cursor-pointer gap-2">
                         <app-svg class="fill-white" [icon]="tech.icon" [size]="25" />
                         <span class="text-white">{{ tech.name }}</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <a *ngIf="hasDemo"  class="group flex gap-2" [href]="demo" target="_blank">
-                        <span class="text-white group-hover:text-neutral-500">{{ demoTitle | translate }}</span>
-                        <app-svg class="text-white group-hover:text-neutral-500" icon="link" [size]="20" />
+                        <span class="text-white group-hover:text-neutral">{{ demoTitle | translate }}</span>
+                        <app-svg class="text-white group-hover:text-neutral" icon="link" [size]="20" />
                     </a>
                     <a *ngIf="hasRepository" class="group flex gap-2" [href]="repository" target="_blank">
-                        <span class="text-white group-hover:text-neutral-500">{{ repoTitle | translate }}</span>
-                        <app-svg class="text-white group-hover:text-neutral-500" icon="link" [size]="20" />
+                        <span class="text-white group-hover:text-neutral">{{ repoTitle | translate }}</span>
+                        <app-svg class="text-white group-hover:text-neutral" icon="link" [size]="20" />
                     </a>
                     <a *ngIf="hasApi" class="group flex gap-2" [href]="api" target="_blank">
-                        <span class="text-white group-hover:text-neutral-500">{{ apiTitle | translate }}</span>
-                        <app-svg class="text-white group-hover:text-neutral-500" icon="link" [size]="20" />
+                        <span class="text-white group-hover:text-neutral">{{ apiTitle | translate }}</span>
+                        <app-svg class="text-white group-hover:text-neutral" icon="link" [size]="20" />
                     </a>
                 </div>
            </div>

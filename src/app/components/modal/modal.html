@@ -1,5 +1,5 @@
 <ng-container *ngIf="show">
-    <div class="min-w-4/5 fixed bg-black-800 rounded-xl shadow-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-11">
+    <div class="min-w-4/5 max-h-[80vmax] fixed bg-black rounded-xl shadow-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-11 overflow-y-scroll  xl:overflow-hidden modal" @modal>
         <button
             class="absolute top-5 right-6 text-white hover:text-neutral-500 text-xl font-bold cursor-pointer"
             (click)="close()"
@@ -7,5 +7,5 @@
         >X</button>
         <ng-content></ng-content>
     </div>
-    <div class="fixed w-screen h-screen left-0 top-0 opacity-50 bg-black z-10" (click)="close()"></div>
+    <div class="fixed w-screen h-screen left-0 top-0 opacity-30 bg-white z-10 overlay" (click)="close()" @overlay></div>
 </ng-container>

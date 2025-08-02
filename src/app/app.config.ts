@@ -1,6 +1,12 @@
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
+import {
+    ApplicationConfig,
+    importProvidersFrom,
+    provideBrowserGlobalErrorListeners,
+    provideZoneChangeDetection,
+} from '@angular/core';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideRouter } from '@angular/router';
 import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -24,6 +30,9 @@ export const appConfig: ApplicationConfig = {
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient],
             },
-        })
+        }),
+        importProvidersFrom(
+            BrowserAnimationsModule
+        ),
     ]
 };
