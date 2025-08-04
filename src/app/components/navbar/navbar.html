@@ -11,7 +11,7 @@
             class="nav flex bg-white"
             [ngClass]="{'active': menuOpen}"
         >
-            <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all md:hidden">
+            <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all lg:hidden">
                 <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
                     <img class="w-6.5 mr-1 mb-1" src="assets/svg/language.svg">
                     {{ 'navbar.lang.title' | translate }}
@@ -70,7 +70,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="hidden md:flex items-center">
+        <div class="hidden lg:flex items-center">
             <div class="relative font-semibold text-xl leading-6 tracking-tight transition-all">
                 <button class="flex items-center px-4 py-2 hover:underline cursor-pointer" (click)="toggleLangList()">
                     <img class="w-6.5 mr-1 mb-1" src="assets/svg/language.svg">

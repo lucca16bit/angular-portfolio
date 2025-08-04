@@ -31,9 +31,9 @@
     },
     "experiences-card": {
         "first-experience-card": {
-            "title": "Back-End Developer At Projeto Front-End Fusion",
+            "title": "Back-End Developer At Front-end Fusion Community",
             "subTitle": "Volunteer",
-            "description": "As a volunteer back-end developer in the Front-End Fusion Project, I focus on implementing back-end systems for applications developed by the community. I am taking part in building features, learning about good programming practices, and applying what I am studying. This experience has been invaluable in applying my knowledge to real projects and growing as a professional in the field.",
+            "description": "As a volunteer back-end developer in the Front-end Fusion Community, I focus on implementing back-end systems for applications developed by the community. I am taking part in building features, learning about good programming practices, and applying what I am studying. This experience has been invaluable in applying my knowledge to real projects and growing as a professional in the field.",
             "initialDate": "June 2025",
             "endDate": "Until now"
         },"second-experience-card": {
@@ -60,14 +60,44 @@
     "projects": {
         "title": "My ",
         "strong": "Projects",
+        "demo": "Demo",
+        "repo": "Repository",
+        "api": "API",
+        "load-more": "See more",
         "project-card": {
             "first-project-card": {
                 "title": "todo.it",
-                "description": "todo.it is a web application developed with Angular and Tailwind for task management. Its interface allows you to easily and intuitively add, edit, mark as completed, and remove tasks, as well as filter them by priority (low, medium, or high). The application also features user authentication via JWT to ensure that users can securely manage their tasks.",
-                "link": "Demo",
-                "repo": "Repository",
+                "description": "todo.it is a full-stack application for organizing tasks. It uses Angular and Tailwind for the front end and Java and Spring Boot for the back end. It enables secure task management with features like priority filtering and a lightweight, responsive interface.",
                 "modal": {
                     "subTitle": "",
+                    "description": "todo.it is a full-stack task management application developed with an Angular + Tailwind front end and a Java + Spring Boot back end. It allows users to add, edit, delete, and filter tasks by priority (low, medium, or high). JWT authentication ensures secure access to data. The REST API uses MySQL, with Flyway managing migrations, and has Swagger documentation. The project adheres to sound architectural principles and provides a fluid, responsive experience.",
+                    "techs": "Technologies used"
+                }
+            },
+            "second-project-card": {
+                "title": "Agents Live",
+                "description": "Agents Live is a full-stack application in which users can create chat rooms, send text questions, and record audio. This audio is processed by AI to generate real-time responses.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "Agents Live is a full-stack application that simulates real-time question rooms with voice support. Users can create a room and submit questions via text or record audio directly in the browser. These audio recordings are sent to the back end, where they are processed and converted into text to train an AI that provides automatic responses. The front end was developed with React and TypeScript using Vite for building and React Router for navigating between routes. The interface is organized into three main flows: room creation, question viewing, and audio recording. The project uses MediaRecorder to capture audio through the browser and periodically sends it to the API. The back end (developed with Node.js + Fastify) has REST routes for managing rooms and questions, as well as a dedicated route for uploading recordings.",
+                    "techs": "Technologies used"
+                }
+            },
+            "third-project-card": {
+                "title": "Star Wars API",
+                "description": "This is a REST API developed in Node.js and TypeScript for managing elements from the Star Wars universe. This complete system features JWT authentication and CRUD operations for characters, spaceships, planets, and star systems. It uses the Prisma ORM with MySQL and Swagger documentation.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "I developed this REST API to manage data from the Star Wars universe, including characters, ships, planets, and star systems. The goal was to create a comprehensive registration system with a scalable architecture that follows back-end best practices using Node.js and TypeScript. I implemented JWT authentication, protected routes, input validations, standardized error handling, and interactive Swagger documentation. I used Prisma as the ORM for migrations connected to MySQL.",
+                    "techs": "Technologies used"
+                }
+            },
+            "fourth-project-card": {
+                "title": "Voll.med API",
+                "description": "The Voll.med API is a REST application built with Spring Boot for managing patients, doctors, and appointments. It allows you to easily and securely register, update, and delete data, as well as schedule and cancel medical appointments.",
+                "modal": {
+                    "subTitle": "",
+                    "description": "The Voll.med REST API application, developed with Java and Spring Boot, is designed to manage a fictional medical clinic. With endpoints organized for patients, doctors, and appointments, the API enables complete registration, editing, listing, and deletion operations, as well as appointment scheduling and cancellation. Authentication is done via JWT to ensure secure access to protected routes. All documentation is automatically generated with Swagger. The project has a clean, modular structure and adheres to good organizational and validation practices.",
                     "techs": "Technologies used"
                 }
             }
