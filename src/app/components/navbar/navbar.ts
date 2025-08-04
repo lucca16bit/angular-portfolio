@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -8,7 +9,27 @@ import { Svg } from '../svg/svg';
     selector: 'navbar',
     imports: [CommonModule, Svg, TranslateModule],
     templateUrl: './navbar.html',
-    styleUrl: './navbar.css'
+    styleUrl: './navbar.css',
+    animations: [
+        trigger('show', [
+            transition(':enter', [
+            style({
+                opacity: 0,
+                transform: 'translateY(-10px) scale(0.95)'
+            }),
+            animate('200ms ease-out', style({
+                opacity: 1,
+                transform: 'translateY(0) scale(1)'
+            }))
+            ]),
+            transition(':leave', [
+            animate('150ms ease-in', style({
+                opacity: 0,
+                transform: 'translateY(-8px) scale(0.98)'
+            }))
+            ])
+        ])
+    ]
 })
 export class Navbar {
     @Output("submit") onSumit = new EventEmitter();

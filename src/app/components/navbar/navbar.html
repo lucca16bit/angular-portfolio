@@ -22,8 +22,9 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center text-left absolute top-full right-5 bg-white shadow-md rounded z-10"
+                    class="flex flex-col items-center text-left absolute top-full right-5 bg-white shadow-md rounded z-10 show"
                     *ngIf="showLangList"
+                    @show
                 >
                     <button class="px-4 py-2 w-full text-left text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
                         {{ 'navbar.lang.option-one' | translate }}
@@ -81,8 +82,9 @@
                     >
                 </button>
                 <div
-                    class="flex flex-col items-center absolute top-full right-5 bg-white shadow-md rounded z-10"
+                    class="flex flex-col items-center absolute top-full right-5 bg-white shadow-md rounded z-10 show"
                     *ngIf="showLangList"
+                    @show
                 >
                     <button class="px-4 py-2 w-full text-right text-base leading-6 tracking-wide font-normal text-neutral-500 hover:bg-neutral hover:text-white hover:font-semibold cursor-pointer" (click)="changeLang('pt')">
                         {{ 'navbar.lang.option-one' | translate }}
