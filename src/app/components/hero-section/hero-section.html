@@ -1,27 +1,57 @@
 <div class="flex w-full min-h-screen xl:-mt-15 sm:px-6 lg:px-0">
-    <div class="flex flex-col xl:flex-row w-full xl:w-4/5 m-auto -mt-1 md:mt-auto">
+    <div
+        class="flex flex-col xl:flex-row w-full xl:w-4/5 m-auto -mt-1 md:mt-auto"
+    >
         <div class="flex w-full max-w-[600px] px-6 xl:hidden mx-auto">
-            <img src="assets/svg/hero-illustration.svg" alt="Hero Illustration">
+            <img
+                src="assets/svg/hero-illustration.svg"
+                alt="Hero Illustration"
+            />
         </div>
-        <div class="flex flex-col xl:w-3/5 2xl:w-[55%] px-6 my-6 h-auto justify-center">
+        <div
+            class="flex flex-col xl:w-3/5 2xl:w-[55%] px-6 my-6 h-auto justify-center"
+        >
             <div>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ 'hero-section.greeting' | translate }}</span>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'hero-section.username' | translate }}</span>
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
+                    >{{ 'hero-section.greeting' | translate }}</span
+                >
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                    >{{ 'hero-section.username' | translate }}</span
+                >
             </div>
             <div>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'hero-section.areaTitle' | translate }}</span>
-                <span class="outlined text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'hero-section.outlinedRole' | translate }}</span>
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                    >{{ 'hero-section.areaTitle' | translate }}</span
+                >
+                <span
+                    class="outlined text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                    >{{ 'hero-section.outlinedRole' | translate }}</span
+                >
             </div>
             <div>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ 'hero-section.based' | translate }}</span>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'hero-section.country' | translate }}</span>
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
+                    >{{ 'hero-section.based' | translate }}</span
+                >
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                    >{{ 'hero-section.country' | translate }}</span
+                >
             </div>
             <div class="mt-8">
-                <p class="text-neutral-500 text-base leading-6 tracking-wide">{{ 'hero-section.description' | translate }}</p>
+                <p class="text-neutral-500 text-base leading-6 tracking-wide">
+                    {{ 'hero-section.description' | translate }}
+                </p>
             </div>
             <div class="flex w-full mt-8 xl:mt-30 items-center">
                 <div class="flex gap-6 mx-auto w-full max-w-[1280px]">
-                    <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
+                    <a
+                        href="https://www.linkedin.com/in/lucas-t-goncalves/"
+                        target="_blank"
+                    >
                         <button
                             class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
                             type="button"
@@ -45,7 +75,10 @@
                             ></app-svg>
                         </button>
                     </a>
-                    <a href="https://www.instagram.com/lucca_16bit/" target="_blank">
+                    <a
+                        href="https://www.instagram.com/lucca_16bit/"
+                        target="_blank"
+                    >
                         <button
                             class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
                             type="button"
@@ -70,14 +103,28 @@
                         </button>
                     </a>
                     <div class="items-center w-full hidden md:flex">
-                        <div class="h-0.5 bg-black flex-1 hidden 2xl:flex"></div>
+                        <div
+                            class="h-0.5 bg-black flex-1 hidden 2xl:flex"
+                        ></div>
                         <button
                             class="flex group 2xl:ml-4 py-4 gap-1 text-black hover:text-neutral-500 font-semibold cursor-pointer"
                             (click)="scrollToSection('skills')"
                         >
-                            <span class="text-base leading-6 tracking-wide">{{ 'hero-section.btn' | translate }}</span>
-                            <svg class="w-4 group-hover:animate-bounce" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 4.16663L10 15M15 10.8333L10.5893 15.244C10.2638 15.5695 9.73618 15.5695 9.41074 15.244L5 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <span class="text-base leading-6 tracking-wide"
+                                >{{ 'hero-section.btn' | translate }}</span
+                            >
+                            <svg
+                                class="w-4 group-hover:animate-bounce"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10 4.16663L10 15M15 10.8333L10.5893 15.244C10.2638 15.5695 9.73618 15.5695 9.41074 15.244L5 10.8333"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
                             </svg>
                         </button>
                     </div>
@@ -85,8 +132,10 @@
             </div>
         </div>
         <div class="hidden xl:flex xl:w-2/5 2xl:w-[45%] items-center">
-            <img src="assets/svg/hero-illustration.svg" alt="Hero Illustration">
+            <img
+                src="assets/svg/hero-illustration.svg"
+                alt="Hero Illustration"
+            />
         </div>
     </div>
 </div>
-

@@ -4,13 +4,13 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
     selector: 'section-footer',
     imports: [TranslateModule],
-    templateUrl: './footer.html'
+    templateUrl: './footer.html',
 })
 export class Footer {
     menuOpen = false;
 
     scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
+        const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }

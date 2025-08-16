@@ -36,13 +36,15 @@
             "description": "As a volunteer back-end developer in the Front-end Fusion Community, I focus on implementing back-end systems for applications developed by the community. I am taking part in building features, learning about good programming practices, and applying what I am studying. This experience has been invaluable in applying my knowledge to real projects and growing as a professional in the field.",
             "initialDate": "June 2025",
             "endDate": "Until now"
-        },"second-experience-card": {
+        },
+        "second-experience-card": {
             "title": "Front-End Developer At Grupo Nós do Morro",
             "subTitle": "Volunteer",
             "description": "As a volunteer front-end developer, I participated in creating the organization's institutional website. Using HTML, CSS, and JavaScript, I built the interface with a focus on accessibility, responsiveness, and content organization. This experience allowed me to apply my knowledge to a real-world project while contributing to a social cause.",
             "initialDate": "Dec 2024",
             "endDate": "Mar 2025"
-        },"third-experience-card": {
+        },
+        "third-experience-card": {
             "title": "IT Assistant At Caraguatatuba City Hall",
             "subTitle": "Trainee",
             "description": "As an IT assistant, I provided technical support to teachers and administrative staff, ensuring the efficient operation of computer resources in classrooms and administrative offices. I maintained computers and peripherals, solved hardware and software problems, and referred more complex issues to SEDUC's team of analysts. My work helped create a more stable and accessible technological environment in public schools.",

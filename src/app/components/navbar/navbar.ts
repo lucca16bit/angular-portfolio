@@ -13,26 +13,32 @@ import { Svg } from '../svg/svg';
     animations: [
         trigger('show', [
             transition(':enter', [
-            style({
-                opacity: 0,
-                transform: 'translateY(-10px) scale(0.95)'
-            }),
-            animate('200ms ease-out', style({
-                opacity: 1,
-                transform: 'translateY(0) scale(1)'
-            }))
+                style({
+                    opacity: 0,
+                    transform: 'translateY(-10px) scale(0.95)',
+                }),
+                animate(
+                    '200ms ease-out',
+                    style({
+                        opacity: 1,
+                        transform: 'translateY(0) scale(1)',
+                    })
+                ),
             ]),
             transition(':leave', [
-            animate('150ms ease-in', style({
-                opacity: 0,
-                transform: 'translateY(-8px) scale(0.98)'
-            }))
-            ])
-        ])
-    ]
+                animate(
+                    '150ms ease-in',
+                    style({
+                        opacity: 0,
+                        transform: 'translateY(-8px) scale(0.98)',
+                    })
+                ),
+            ]),
+        ]),
+    ],
 })
 export class Navbar {
-    @Output("submit") onSumit = new EventEmitter();
+    @Output('submit') onSumit = new EventEmitter();
     lastScrollPosition: number = 0;
     rotateChevron: boolean = false;
     showLangList: boolean = false;
@@ -64,7 +70,8 @@ export class Navbar {
 
     @HostListener('window:scroll', [])
     handleWindowScroll() {
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollPosition =
+            window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollPosition > this.lastScrollPosition) {
             this.showLangList = false;
@@ -77,7 +84,7 @@ export class Navbar {
     }
 
     scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
+        const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }

@@ -1,7 +1,7 @@
-import { FormControl } from "@angular/forms";
+import { FormControl } from '@angular/forms';
 
 export interface ContactForm {
-    name: FormControl,
-    email: FormControl,
-    description: FormControl
+    name: FormControl;
+    email: FormControl;
+    description: FormControl;
 }

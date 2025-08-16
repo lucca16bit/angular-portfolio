@@ -1,18 +1,12 @@
 .outlined {
     color: white;
-    text-shadow:
-        3px 3px 0 black,
-        -3px 3px 0 black,
-        3px -3px 0 black,
+    text-shadow: 3px 3px 0 black, -3px 3px 0 black, 3px -3px 0 black,
         -3px -3px 0 black;
 }
 
 @media (max-width: 768px) {
     .outlined {
-        text-shadow:
-        2px 2px 0 black,
-        -2px 2px 0 black,
-        2px -2px 0 black,
-        -2px -2px 0 black;
+        text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black,
+            -2px -2px 0 black;
     }
 }

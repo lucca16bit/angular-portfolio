@@ -8,21 +8,22 @@ import { ProjectCard } from '../project-card/project-card';
 @Component({
     selector: 'projects',
     imports: [ProjectCard, CommonModule, TranslateModule],
-    templateUrl: './projects.html'
+    templateUrl: './projects.html',
 })
 export class Projects {
     visibleProjects: number = 4;
 
     projectsList: Project[] = [
         {
-            title: "projects.project-card.first-project-card.title",
-            imageUrl: "assets/img/projects/preview-todoit-mobile.png",
-            description: "projects.project-card.first-project-card.description",
-            modalDescription: "projects.project-card.first-project-card.modal.description",
-            techsUsed: "projects.project-card.first-project-card.modal.techs",
-            demo: "https://todoit-simply.vercel.app/",
-            repository: "https://github.com/lucca16bit/angular-todo.it",
-            apiRepository: "https://github.com/lucca16bit/java-todo.it",
+            title: 'projects.project-card.first-project-card.title',
+            imageUrl: 'assets/img/projects/preview-todoit-mobile.png',
+            description: 'projects.project-card.first-project-card.description',
+            modalDescription:
+                'projects.project-card.first-project-card.modal.description',
+            techsUsed: 'projects.project-card.first-project-card.modal.techs',
+            demo: 'https://todoit-simply.vercel.app/',
+            repository: 'https://github.com/lucca16bit/angular-todo.it',
+            apiRepository: 'https://github.com/lucca16bit/java-todo.it',
             techs: [
                 { name: 'Angular', icon: 'miniAngular' },
                 { name: 'Typescript', icon: 'miniTypescript' },
@@ -31,18 +32,21 @@ export class Projects {
                 { name: 'Spring Boot', icon: 'miniSpring' },
                 { name: 'MySQL', icon: 'miniMysql' },
                 { name: 'Flyway', icon: 'miniFlyway' },
-                { name: 'Swagger', icon: 'miniSwagger' }
-            ]
+                { name: 'Swagger', icon: 'miniSwagger' },
+            ],
         },
         {
-            title: "projects.project-card.second-project-card.title",
-            imageUrl: "assets/img/projects/preview-agents-live.png",
-            description: "projects.project-card.second-project-card.description",
-            modalDescription: "projects.project-card.second-project-card.modal.description",
-            techsUsed: "projects.project-card.second-project-card.modal.techs",
-            demo: "https://agents-livestream.vercel.app/",
-            repository: "https://github.com/lucca16bit/react-agents-livestream",
-            apiRepository: "https://github.com/lucca16bit/node-agents-livestream",
+            title: 'projects.project-card.second-project-card.title',
+            imageUrl: 'assets/img/projects/preview-agents-live.png',
+            description:
+                'projects.project-card.second-project-card.description',
+            modalDescription:
+                'projects.project-card.second-project-card.modal.description',
+            techsUsed: 'projects.project-card.second-project-card.modal.techs',
+            demo: 'https://agents-livestream.vercel.app/',
+            repository: 'https://github.com/lucca16bit/react-agents-livestream',
+            apiRepository:
+                'https://github.com/lucca16bit/node-agents-livestream',
             techs: [
                 { name: 'React', icon: 'miniReact' },
                 { name: 'TailwindCSS', icon: 'miniTailwind' },
@@ -51,41 +55,45 @@ export class Projects {
                 { name: 'Fastify', icon: 'miniFastify' },
                 { name: 'Gemini', icon: 'miniGemini' },
                 { name: 'PostgreSQL', icon: 'miniPostgresql' },
-                { name: 'Prisma', icon: 'miniPrisma' }
-            ]
+                { name: 'Prisma', icon: 'miniPrisma' },
+            ],
         },
         {
-            title: "projects.project-card.third-project-card.title",
-            imageUrl: "assets/img/projects/preview-endpoints-star-wars.png",
-            description: "projects.project-card.third-project-card.description",
-            modalDescription: "projects.project-card.third-project-card.modal.description",
-            techsUsed: "projects.project-card.third-project-card.modal.techs",
-            demo: "https://express-star-wars-api.onrender.com/",
-            repository: "https://github.com/lucca16bit/express-desafio-backend-fusion",
+            title: 'projects.project-card.third-project-card.title',
+            imageUrl: 'assets/img/projects/preview-endpoints-star-wars.png',
+            description: 'projects.project-card.third-project-card.description',
+            modalDescription:
+                'projects.project-card.third-project-card.modal.description',
+            techsUsed: 'projects.project-card.third-project-card.modal.techs',
+            demo: 'https://express-star-wars-api.onrender.com/',
+            repository:
+                'https://github.com/lucca16bit/express-desafio-backend-fusion',
             techs: [
                 { name: 'Node.js', icon: 'miniNodejs' },
                 { name: 'Typescript', icon: 'miniTypescript' },
                 { name: 'Express', icon: 'miniExpress' },
                 { name: 'Prisma', icon: 'miniPrisma' },
-                { name: 'Swagger', icon: 'miniSwagger' }
-            ]
+                { name: 'Swagger', icon: 'miniSwagger' },
+            ],
         },
         {
-            title: "projects.project-card.fourth-project-card.title",
-            imageUrl: "assets/img/projects/preview-endpoints-api-med.png",
-            description: "projects.project-card.fourth-project-card.description",
-            modalDescription: "projects.project-card.fourth-project-card.modal.description",
-            techsUsed: "projects.project-card.fourth-project-card.modal.techs",
-            demo: "",
-            repository: "https://github.com/lucca16bit/spring-boot-med-voll",
+            title: 'projects.project-card.fourth-project-card.title',
+            imageUrl: 'assets/img/projects/preview-endpoints-api-med.png',
+            description:
+                'projects.project-card.fourth-project-card.description',
+            modalDescription:
+                'projects.project-card.fourth-project-card.modal.description',
+            techsUsed: 'projects.project-card.fourth-project-card.modal.techs',
+            demo: '',
+            repository: 'https://github.com/lucca16bit/spring-boot-med-voll',
             techs: [
                 { name: 'Java', icon: 'miniJava' },
                 { name: 'Spring Boot', icon: 'miniSpring' },
                 { name: 'PosgreSQL', icon: 'miniPostgresql' },
                 { name: 'Flyway', icon: 'miniFlyway' },
-                { name: 'Swagger', icon: 'miniSwagger' }
-            ]
-        }
+                { name: 'Swagger', icon: 'miniSwagger' },
+            ],
+        },
     ];
 
     submit() {

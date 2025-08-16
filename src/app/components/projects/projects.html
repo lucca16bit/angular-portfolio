@@ -1,9 +1,17 @@
 <div class="flex flex-col w-full h-auto mx-auto py-20 bg-black">
     <div class="justify-center items-center mx-auto mb-5 text-white">
-        <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ 'projects.title' | translate }}</span>
-        <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'projects.strong' | translate }}</span>
+        <span
+            class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
+            >{{ 'projects.title' | translate }}</span
+        >
+        <span
+            class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+            >{{ 'projects.strong' | translate }}</span
+        >
     </div>
-    <div class="grid grid-cols-1 xl:grid-cols-2 w-full h-auto mx-auto 2xl:w-4/5">
+    <div
+        class="grid grid-cols-1 xl:grid-cols-2 w-full h-auto mx-auto 2xl:w-4/5"
+    >
         <project-card
             *ngFor="let project of projectsList.slice(0, visibleProjects)"
             [title]="project.title"
@@ -29,7 +37,7 @@
             (click)="submit()"
         >
             <span>{{ 'projects.load-more' | translate }}</span>
-            <img src="assets/svg/down.svg" alt="Down">
+            <img src="assets/svg/down.svg" alt="Down" />
         </button>
     </div>
 </div>

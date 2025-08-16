@@ -5,7 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
     selector: 'experience-cards',
     imports: [CommonModule, TranslateModule],
-    templateUrl: './experience-cards.html'
+    templateUrl: './experience-cards.html',
 })
 export class ExperienceCards {
     @Input() title: string = '';

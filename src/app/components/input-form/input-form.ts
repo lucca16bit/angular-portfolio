@@ -1,6 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, Input } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
+import {
+    ControlValueAccessor,
+    NG_VALUE_ACCESSOR,
+    ReactiveFormsModule,
+} from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
 type InputTypes = 'name' | 'email' | 'text';
@@ -12,10 +16,10 @@ type InputTypes = 'name' | 'email' | 'text';
         {
             provide: NG_VALUE_ACCESSOR,
             useExisting: forwardRef(() => InputForm),
-            multi: true
-        }
+            multi: true,
+        },
     ],
-    templateUrl: './input-form.html'
+    templateUrl: './input-form.html',
 })
 export class InputForm implements ControlValueAccessor {
     @Input() inputName: string = '';

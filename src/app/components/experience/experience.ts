@@ -6,8 +6,6 @@ import { ExperienceCards } from '../experience-cards/experience-cards';
 @Component({
     selector: 'experience',
     imports: [ExperienceCards, TranslateModule],
-    templateUrl: './experience.html'
+    templateUrl: './experience.html',
 })
-export class Experience {
-    
-}
+export class Experience {}

@@ -10,10 +10,17 @@ import { Projects } from '../../components/projects/projects';
 import { Skills } from '../../components/skills/skills';
 
 @Component({
-  selector: 'app-home',
-  imports: [Navbar, HeroSection, Skills, Experience, AboutMe, Projects, Footer, Contact],
-  templateUrl: './home.html'
+    selector: 'app-home',
+    imports: [
+        Navbar,
+        HeroSection,
+        Skills,
+        Experience,
+        AboutMe,
+        Projects,
+        Footer,
+        Contact,
+    ],
+    templateUrl: './home.html',
 })
-export class Home {
-
-}
+export class Home {}

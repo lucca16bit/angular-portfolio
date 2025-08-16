@@ -1,18 +1,34 @@
-<div class="flex flex-col xl:flex-row w-full 2xl:w-4/5 h-auto mx-auto p-6 my-6 lg:my-35 bg-white gap-15 md:gap-26">
+<div
+    class="flex flex-col xl:flex-row w-full 2xl:w-4/5 h-auto mx-auto p-6 my-6 lg:my-35 bg-white gap-15 md:gap-26"
+>
     <div class="flex flex-col w-full gap-6 md:hidden">
         <div class="flex flex-col gap-2">
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.title' | translate }}</span>
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.subTitle' | translate }}</span>
+            <span
+                class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                >{{ 'contact.title' | translate }}</span
+            >
+            <span
+                class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                >{{ 'contact.subTitle' | translate }}</span
+            >
         </div>
         <div class="flex">
-            <span class="text-base leading-6 tracking-wide text-neutral-500">{{ 'contact.description' | translate }}</span>
+            <span class="text-base leading-6 tracking-wide text-neutral-500"
+                >{{ 'contact.description' | translate }}</span
+            >
         </div>
         <div class="flex flex-col gap-4">
             <a [href]="'mailto:' + myEmail">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myEmail }}</span>
+                <span
+                    class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors"
+                    >{{ myEmail }}</span
+                >
             </a>
             <a [href]="'tel:' + myPhone">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myPhone }}</span>
+                <span
+                    class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors"
+                    >{{ myPhone }}</span
+                >
             </a>
         </div>
     </div>
@@ -42,18 +58,29 @@
                 [maxlength]="maxLength"
             ></textarea>
             <div class="w-full -mb-1.5" *ngIf="isLoading">
-                <div class="h-1.5 w-full bg-neutral-300 overflow-hidden rounded-lg">
-                    <div class="progress w-full h-full bg-black-800 left-right"></div>
+                <div
+                    class="h-1.5 w-full bg-neutral-300 overflow-hidden rounded-lg"
+                >
+                    <div
+                        class="progress w-full h-full bg-black-800 left-right"
+                    ></div>
                 </div>
             </div>
             <div class="flex">
                 <div *ngIf="isValid('description')" class="-mt-1 -mb-6">
-                    <span class="text-error-500 text-base leading-5 tracking-tight">{{ getErrorMessage('description') }}</span>
+                    <span
+                        class="text-error-500 text-base leading-5 tracking-tight"
+                        >{{ getErrorMessage('description') }}</span
+                    >
                 </div>
             </div>
             <div class="flex justify-end">
                 <div class="shrink-0 -mt-8 mr-3">
-                    <p class="text-sm leading-5 tracking-tight text-neutral-500">{{ charCount }}/{{ maxLength }}</p>
+                    <p
+                        class="text-sm leading-5 tracking-tight text-neutral-500"
+                    >
+                        {{ charCount }}/{{ maxLength }}
+                    </p>
                 </div>
             </div>
         </div>
@@ -62,9 +89,14 @@
                 class="w-60 h-15 md:p-4 rounded-md border-2 border-transparent active:border-black bg-black hover:bg-neutral active:bg-white text-white active:text-black text-base leading-5 md:text-xl md:leading-6 tracking-wide font-semibold cursor-pointer disabled:cursor-not-allowed disabled:hover:bg-black disabled:active:text-white"
                 (click)="submit()"
                 [disabled]="isBtnDisabled || isLoading"
-            ><span>{{ 'contact.button' | translate }}</span></button>
+            >
+                <span>{{ 'contact.button' | translate }}</span>
+            </button>
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/lucas-t-goncalves/" target="_blank">
+                <a
+                    href="https://www.linkedin.com/in/lucas-t-goncalves/"
+                    target="_blank"
+                >
                     <button
                         class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
                         type="button"
@@ -88,7 +120,10 @@
                         ></app-svg>
                     </button>
                 </a>
-                <a href="https://www.instagram.com/lucca_16bit/" target="_blank">
+                <a
+                    href="https://www.instagram.com/lucca_16bit/"
+                    target="_blank"
+                >
                     <button
                         class="group w-15 h-15 bg-white rounded-md border-2 border-black active:border-transparent hover:bg-black active:bg-black cursor-pointer"
                         type="button"
@@ -117,18 +152,32 @@
     </form>
     <div class="hidden md:flex flex-col w-full gap-6">
         <div class="flex flex-col gap-2">
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.title' | translate }}</span>
-            <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'contact.subTitle' | translate }}</span>
+            <span
+                class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                >{{ 'contact.title' | translate }}</span
+            >
+            <span
+                class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                >{{ 'contact.subTitle' | translate }}</span
+            >
         </div>
         <div class="flex">
-            <span class="text-base leading-6 tracking-wide text-neutral-500">{{ 'contact.description' | translate }}</span>
+            <span class="text-base leading-6 tracking-wide text-neutral-500"
+                >{{ 'contact.description' | translate }}</span
+            >
         </div>
         <div class="flex flex-col gap-4">
             <a [href]="'mailto:' + myEmail">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myEmail }}</span>
+                <span
+                    class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors"
+                    >{{ myEmail }}</span
+                >
             </a>
             <a [href]="'tel:' + myPhone">
-                <span class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors">{{ myPhone }}</span>
+                <span
+                    class="text-xl leading-6 md:text-[28px] md:leading-8 tracking-tight font-semibold md:font-bold hover:text-neutral hover:underline transition-colors"
+                    >{{ myPhone }}</span
+                >
             </a>
         </div>
     </div>

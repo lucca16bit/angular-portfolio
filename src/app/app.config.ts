@@ -5,7 +5,10 @@ import {
     provideBrowserGlobalErrorListeners,
     provideZoneChangeDetection,
 } from '@angular/core';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import {
+    provideClientHydration,
+    withEventReplay,
+} from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideRouter } from '@angular/router';
 import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
@@ -31,8 +34,6 @@ export const appConfig: ApplicationConfig = {
                 deps: [HttpClient],
             },
         }),
-        importProvidersFrom(
-            BrowserAnimationsModule
-        ),
-    ]
+        importProvidersFrom(BrowserAnimationsModule),
+    ],
 };

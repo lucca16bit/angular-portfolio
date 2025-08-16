@@ -8,9 +8,8 @@ import { Svg } from '../svg/svg';
 @Component({
     selector: 'skills',
     imports: [Svg, TranslateModule, CommonModule],
-    templateUrl: './skills.html'
+    templateUrl: './skills.html',
 })
-
 export class Skills {
     svgSize: number = 50;
 
@@ -47,7 +46,7 @@ export class Skills {
         { icon: 'swagger', title: 'Swagger' },
         { icon: 'maven', title: 'Maven' },
         { icon: 'gradle', title: 'Gradle' },
-        { icon: 'npm', title: 'npm' }
+        { icon: 'npm', title: 'npm' },
     ];
 
     @HostListener('window:resize')

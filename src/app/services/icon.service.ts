@@ -4,7 +4,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { svgIcons } from '../../assets/svg/svgs.icons';
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'root',
 })
 export class IconService {
     constructor(private sanitizer: DomSanitizer) {}

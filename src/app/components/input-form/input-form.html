@@ -13,11 +13,13 @@
                 [disabled]="isDisabled"
                 (input)="onInput($event)"
                 (blur)="onBlur()"
-            >
+            />
         </div>
     </div>
 
     <div *ngIf="showError && errorMessage" class="mt-1 -mb-7">
-        <span class="text-error-500 text-base leading-5 tracking-tight">{{ errorMessage }}</span>
+        <span class="text-error-500 text-base leading-5 tracking-tight"
+            >{{ errorMessage }}</span
+        >
     </div>
 </div>

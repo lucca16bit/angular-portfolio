@@ -1,15 +1,24 @@
-
 <div class="flex w-full h-auto mx-auto my-12 py-12 break-keep">
-    <div class="flex flex-col justify-center xl:flex-row gap-16 w-full h-auto mx-6">
+    <div
+        class="flex flex-col justify-center xl:flex-row gap-16 w-full h-auto mx-6"
+    >
         <div class="w-full h-auto md:w-[600px] md:h-[600px] m-auto xl:m-0">
-            <img [src]="aboutImageUrl" alt="Logo sobre mim">
+            <img [src]="aboutImageUrl" alt="Logo sobre mim" />
         </div>
-        <div class=" flex flex-col h-auto gap-8">
+        <div class="flex flex-col h-auto gap-8">
             <div class="text-black">
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight">{{ 'about.title' | translate }}</span>
-                <span class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold">{{ 'about.strong' | translate }}</span>
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
+                    >{{ 'about.title' | translate }}</span
+                >
+                <span
+                    class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+                    >{{ 'about.strong' | translate }}</span
+                >
             </div>
-            <div class="flex flex-col w-full xl:w-xl h-auto text-neutral-500 gap-4">
+            <div
+                class="flex flex-col w-full xl:w-xl h-auto text-neutral-500 gap-4"
+            >
                 <p class="text-base leading-6 tracking-wide break-keep">
                     {{ 'about.firstParagraph' | translate }}
                 </p>

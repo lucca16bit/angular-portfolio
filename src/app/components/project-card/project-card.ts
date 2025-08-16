@@ -9,7 +9,7 @@ import { Svg } from '../svg/svg';
 @Component({
     selector: 'project-card',
     imports: [Svg, CommonModule, TranslateModule, Modal],
-    templateUrl: './project-card.html'
+    templateUrl: './project-card.html',
 })
 export class ProjectCard {
     @Input() title: string = '';
