@@ -22,15 +22,14 @@ export class Projects {
                 'projects.project-card.first-project-card.modal.description',
             techsUsed: 'projects.project-card.first-project-card.modal.techs',
             demo: 'https://todoit-simply.vercel.app/',
-            repository: 'https://github.com/lucca16bit/angular-todo.it',
-            apiRepository: 'https://github.com/lucca16bit/java-todo.it',
+            repository: 'https://github.com/todo-it-repository',
             techs: [
                 { name: 'Angular', icon: 'miniAngular' },
                 { name: 'Typescript', icon: 'miniTypescript' },
                 { name: 'TailwindCSS', icon: 'miniTailwind' },
                 { name: 'Java', icon: 'miniJava' },
                 { name: 'Spring Boot', icon: 'miniSpring' },
-                { name: 'MySQL', icon: 'miniMysql' },
+                { name: 'PostgreSQL', icon: 'miniPostgresql' },
                 { name: 'Flyway', icon: 'miniFlyway' },
                 { name: 'Swagger', icon: 'miniSwagger' },
             ],
@@ -44,9 +43,7 @@ export class Projects {
                 'projects.project-card.second-project-card.modal.description',
             techsUsed: 'projects.project-card.second-project-card.modal.techs',
             demo: 'https://agents-livestream.vercel.app/',
-            repository: 'https://github.com/lucca16bit/react-agents-livestream',
-            apiRepository:
-                'https://github.com/lucca16bit/node-agents-livestream',
+            repository: 'https://github.com/lucca16bit/node-agents-livestream',
             techs: [
                 { name: 'React', icon: 'miniReact' },
                 { name: 'TailwindCSS', icon: 'miniTailwind' },
