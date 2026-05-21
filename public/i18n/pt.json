@@ -1,132 +1,132 @@
 {
-    "hero-section": {
-        "greeting": "Olá! sou ",
-        "username": "Lucas Gonçalves",
-        "areaTitle": "Desenvolvedor ",
-        "outlinedRole": "Full-Stack",
-        "based": "",
-        "country": "",
-        "btn": "Ver mais",
-        "description": "Sou desenvolvedor full-stack com foco em aplicações web. Trabalho com Angular, React, Java e Node.js para construir soluções completas, do front-end ao back-end."
-    },
-    "navbar": {
-        "firstTitle": "Sobre mim",
-        "secondTitle": "Skills",
-        "thirdTitle": "Projetos",
-        "fourthTitle": "Contato",
-        "buttonTitle": "Currículo",
-        "lang": {
-            "title": "pt",
-            "option-one": "Português",
-            "option-two": "Inglês"
-        }
-    },
-    "skills": {
-        "title": "Minhas ",
-        "strong": "Skills"
-    },
-    "experiences": {
-        "title": "Minhas ",
-        "strong": "Experiências"
-    },
-    "experiences-card": {
-        "first-experience-card": {
-            "title": "Desenvolvedor Back-End na Comunidade Front-end Fusion",
-            "subTitle": "Voluntário",
-            "description": "Na Comunidade Front-End Fusion, atuo como Desenvolvedor voluntário Back-End, focando na implementação de sistemas back-end para as aplicações desenvolvidas pela comunidade. Estou participando da construção de funcionalidades, aprendendo sobre boas práticas de programação e contribuindo com o que estou estudando. Essa experiência tem sido importante para colocar em prática meus conhecimentos em projetos reais e evoluir como profissional na área.",
-            "initialDate": "Jun 2025",
-            "endDate": "Até o momento"
-        },
-        "second-experience-card": {
-            "title": "Desenvolvedor Front-End no Grupo Nós do Morro",
-            "subTitle": "Voluntário",
-            "description": "Participei do projeto como desenvolvedor voluntário no projeto de criação do site institucional da ONG. Fui responsável pela construção da interface utilizando HTML, CSS e JavaScript, focando em acessibilidade, responsividade e organização do conteúdo. Essa experiência me permitiu aplicar meus conhecimentos na prática e contribuir com uma causa social.",
-            "initialDate": "Dez 2024",
-            "endDate": "Mar 2025"
-        },
-        "third-experience-card": {
-            "title": "Assistente de TI na Prefeitura de Caraguatatuba",
-            "subTitle": "Estagiário",
-            "description": "Como Assistente de TI, prestei suporte técnico a professores e equipe administrativa, garantindo o bom funcionamento dos recursos de informática nas salas de aula e setores administrativos. Realizei manutenção de computadores e periféricos, solucionei problemas de hardware e software, e encaminhei demandas mais complexas para a equipe de Analistas da SEDUC. Minha atuação contribuiu para um ambiente tecnológico mais estável e acessível nas escolas da rede pública.",
-            "initialDate": "Set 2022",
-            "endDate": "Set 2024"
-        }
-    },
-    "about": {
-        "title": "Sobre ",
-        "strong": "Mim",
-        "firstParagraph": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais que unem funcionalidade, performance e uma boa experiência para o usuário. Trabalho com tecnologias como Java(Spring Boot), Node.js(Express), Angular e React, sempre buscando evoluir como profissional e entregar aplicações modernas, escaláveis e bem construídas.",
-        "secondParagraph": "Minha jornada com a programação começou há alguns anos, e desde então, sigo me desafiando constantemente. Venho estudando novas ferramentas, construindo projetos pessoais e contribuindo com o que aprendo. Tenho um grande interesse por back-end, mas também curto trabalhar com interfaces bem pensadas e responsivas no front-end.",
-        "thirdParagraph": "Atualmente, foco em desenvolver aplicações completas, explorando desde a modelagem de APIs até o design de interfaces, com boas práticas de código, versionamento e segurança. Estou sempre buscando aprender, seja com a comunidade, com cursos ou através da prática. Quando não estou programando, gosto de jogar, curtir um bom anime ou tocar na minha guitarra haha. Também amo aprender algo novo sobre astronomia e tecnologia."
-    },
-    "projects": {
-        "title": "Meus ",
-        "strong": "Projetos",
-        "demo": "Visualizar",
-        "repo": "Repositório",
-        "api": "API",
-        "load-more": "Ver mais",
-        "project-card": {
-            "first-project-card": {
-                "title": "todo.it",
-                "description": "todo.it é uma aplicação full-stack para organizar tarefas, com Angular + Tailwind no front-end e Java + Spring Boot no back-end. Permite gerenciar tarefas com autenticação segura, filtragem por prioridade e uma interface leve e responsiva.",
-                "modal": {
-                    "subTitle": "",
-                    "description": "todo.it é uma aplicação full-stack para gerenciamento de tarefas, desenvolvido com front-end em Angular + Tailwind e back-end em Java + Spring Boot. O aplicativo permite aos usuários adicionar, editar, excluir e filtrar tarefas por prioridade (baixo, médio, alto), com autenticação via JWT garantindo acesso seguro aos dados. A API REST utiliza MySQL com migrations gerenciadas por Flyway, e conta com documentação via Swagger. O projeto segue boas práticas de arquitetura e entrega uma experiência fluida e responsiva.",
-                    "techs": "Tecnologias utilizadas"
-                }
-            },
-            "second-project-card": {
-                "title": "Agents Live",
-                "description": "Agents Live é uma aplicação full-stack onde os usuários criam salas de conversa, enviam perguntas por texto e gravam áudios que são processados por uma IA para gerar respostas em tempo real.",
-                "modal": {
-                    "subTitle": "",
-                    "description": "Agents Live é uma aplicação full-stack que simula salas de perguntas em tempo real com suporte a voz. O usuário pode criar uma sala, registrar perguntas via texto ou gravar áudios diretamente no navegador. Esses áudios são enviados para o back-end, onde são processados e transformados em texto para alimentar uma IA que responde automaticamente. O front-end foi desenvolvido com React + TypeScript, utilizando Vite para o build e React Router para navegação entre as rotas. A interface é organizada em três fluxos principais: criação de sala, visualização de perguntas e gravação de áudio. O projeto utiliza o MediaRecorder para capturar áudio pelo navegador, que é enviado periodicamente para a API. No back-end (Desenvolvido com Node.js + Fastify), há rotas REST para gerenciamento de salas e perguntas e uma rota dedicada para upload das gravações.",
-                    "techs": "Tecnologias utilizadas"
-                }
-            },
-            "third-project-card": {
-                "title": "Star Wars API",
-                "description": "Uma API REST desenvolvida em Node.js com TypeScript para gerenciar elementos do universo Star Wars. É um sistema completo com autenticação JWT, CRUD para personagens, naves espaciais, planetas e sistemas estelares, utilizando Prisma ORM com MySQL e documentação Swagger.",
-                "modal": {
-                    "subTitle": "",
-                    "description": "Essa é uma API REST que desenvolvi para gerenciar dados do universo Star Wars — personagens, naves, planetas e sistemas estelares. A ideia foi criar um sistema completo de cadastro, organizado em uma arquitetura escalável, seguindo boas práticas de back-end com Node.js e TypeScript. Implementei autenticação com JWT, rotas protegidas, validações de entrada, tratamento de erros padronizado e documentação interativa com Swagger. Usei o Prisma como ORM para as migrations conectado ao MySQL",
-                    "techs": "Tecnologias utilizadas"
-                }
-            },
-            "fourth-project-card": {
-                "title": "Voll.med API",
-                "description": "Voll.med API é uma aplicação REST feita com Spring Boot para gerenciar pacientes, médicos e consultas. Com ela, é possível cadastrar, atualizar e excluir dados, além de realizar agendamentos e cancelamentos de consultas médicas de forma simples e segura.",
-                "modal": {
-                    "subTitle": "",
-                    "description": "Voll.med é uma aplicação API REST desenvolvida com Java e Spring Boot para gerenciar uma clínica médica fictícia. Com endpoints organizados para pacientes, médicos e consultas, a API permite operações completas de cadastro, edição, listagem e exclusão, além de agendamento e cancelamento de consultas. A autenticação é feita via JWT, garantindo segurança no acesso às rotas protegidas. Toda a documentação é gerada automaticamente com Swagger, e o projeto segue uma estrutura limpa, modular e com boas práticas de organização e validação.",
-                    "techs": "Tecnologias utilizadas"
-                }
-            }
-        }
-    },
-    "contact": {
-        "title": "Vamos conversar!",
-        "subTitle": "",
-        "description": "Busco transformar ideias em soluções digitais modernas, funcionais e que realmente façam a diferença na experiência do usuário.",
-        "button": "Entrar em Contato",
-        "input": {
-            "name": "Seu nome",
-            "email": "E-mail (Ex: johndoe@gmail.com)",
-            "description": "Em que posso te ajudar?*"
-        },
-        "errors": {
-            "name": "nome",
-            "email": "e-mail",
-            "description": "mensagem",
-            "required": "O campo de {{field}} é obrigatório",
-            "minlength": "O campo {{field}} deve ter pelo menos {{min}} caracteres",
-            "maxlength": "O campo {{field}} não pode ultrapassar de {{max}} caracteres",
-            "invalidMail": "Formato de E-mail inválido"
-        }
-    },
-    "footer": {
-        "title": "2025 Lucas Gonçalves",
-        "subTitle": "Todos os direitos reservados"
-    }
+	"hero-section": {
+		"greeting": "Olá! sou ",
+		"username": "Lucas Gonçalves",
+		"areaTitle": "Desenvolvedor ",
+		"outlinedRole": "Full-Stack",
+		"based": "",
+		"country": "",
+		"btn": "Ver mais",
+		"description": "Sou desenvolvedor full-stack com foco em aplicações web. Trabalho com Angular, React, Java e Node.js para construir soluções completas, do front-end ao back-end."
+	},
+	"navbar": {
+		"firstTitle": "Sobre mim",
+		"secondTitle": "Skills",
+		"thirdTitle": "Projetos",
+		"fourthTitle": "Contato",
+		"buttonTitle": "Currículo",
+		"lang": {
+			"title": "pt",
+			"option-one": "Português",
+			"option-two": "Inglês"
+		}
+	},
+	"skills": {
+		"title": "Minhas ",
+		"strong": "Skills"
+	},
+	"experiences": {
+		"title": "Minhas ",
+		"strong": "Experiências"
+	},
+	"experiences-card": {
+		"first-experience-card": {
+			"title": "Desenvolvedor Front-End no Grupo Nós do Morro",
+			"subTitle": "Voluntário",
+			"description": "Participo da ONG como desenvolvedor voluntário no projeto de criação e manutenção do site institucional. Sou responsável pela construção da interface utilizando Angular com Tailwind focando em acessibilidade, responsividade e organização do conteúdo. Essa experiência me permite aplicar meus conhecimentos na prática e contribuir com uma causa social.",
+			"initialDate": "Dez 2024",
+			"endDate": "Até o momento"
+		},
+		"second-experience-card": {
+			"title": "Desenvolvedor Back-End na Comunidade Front-end Fusion",
+			"subTitle": "Voluntário",
+			"description": "Na Comunidade Front-End Fusion, tive uma experiência breve como Desenvolvedor Back-End voluntário, onde desenvolvi uma API enquanto estive lá. Foi uma oportunidade de aplicar conhecimentos de back-end em um projeto real, mesmo em um período curto.",
+			"initialDate": "Jun 2025",
+			"endDate": "Ago 2025"
+		},
+		"third-experience-card": {
+			"title": "Assistente de TI na Prefeitura de Caraguatatuba",
+			"subTitle": "Estagiário",
+			"description": "Como Assistente de TI, prestei suporte técnico a professores e equipe administrativa, garantindo o bom funcionamento dos recursos de informática nas salas de aula e setores administrativos. Realizei manutenção de computadores e periféricos, solucionei problemas de hardware e software, e encaminhei demandas mais complexas para a equipe de Analistas da SEDUC. Minha atuação contribuiu para um ambiente tecnológico mais estável e acessível nas escolas da rede pública.",
+			"initialDate": "Set 2022",
+			"endDate": "Set 2024"
+		}
+	},
+	"about": {
+		"title": "Sobre ",
+		"strong": "Mim",
+		"firstParagraph": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais que unem funcionalidade, performance e uma boa experiência para o usuário. Trabalho com tecnologias como Java(Spring Boot), Node.js(Express), Angular e React, sempre buscando evoluir como profissional e entregar aplicações modernas, escaláveis e bem construídas.",
+		"secondParagraph": "Minha jornada com a programação começou há alguns anos, e desde então, sigo me desafiando constantemente. Venho estudando novas ferramentas, construindo projetos pessoais e contribuindo com o que aprendo. Tenho um grande interesse por back-end, mas também curto trabalhar com interfaces bem pensadas e responsivas no front-end.",
+		"thirdParagraph": "Atualmente, foco em desenvolver aplicações completas, explorando desde a modelagem de APIs até o design de interfaces, com boas práticas de código, versionamento e segurança. Estou sempre buscando aprender, seja com a comunidade, com cursos ou através da prática. Quando não estou programando, gosto de jogar, curtir um bom anime ou tocar na minha guitarra haha. Também amo aprender algo novo sobre astronomia e tecnologia."
+	},
+	"projects": {
+		"title": "Meus ",
+		"strong": "Projetos",
+		"demo": "Visualizar",
+		"repo": "Repositório",
+		"api": "API",
+		"load-more": "Ver mais",
+		"project-card": {
+			"first-project-card": {
+				"title": "todo.it",
+				"description": "todo.it é uma aplicação full-stack para organizar tarefas, com Angular + Tailwind no front-end e Java + Spring Boot no back-end. Permite gerenciar tarefas com autenticação segura, filtragem por prioridade e uma interface leve e responsiva.",
+				"modal": {
+					"subTitle": "",
+					"description": "todo.it é uma aplicação full-stack para gerenciamento de tarefas, desenvolvido com front-end em Angular + Tailwind e back-end em Java + Spring Boot. O aplicativo permite aos usuários adicionar, editar, excluir e filtrar tarefas por prioridade (baixo, médio, alto), com autenticação via JWT garantindo acesso seguro aos dados. A API REST utiliza MySQL com migrations gerenciadas por Flyway, e conta com documentação via Swagger. O projeto segue boas práticas de arquitetura e entrega uma experiência fluida e responsiva.",
+					"techs": "Tecnologias utilizadas"
+				}
+			},
+			"second-project-card": {
+				"title": "Agents Live",
+				"description": "Agents Live é uma aplicação full-stack onde os usuários criam salas de conversa, enviam perguntas por texto e gravam áudios que são processados por uma IA para gerar respostas em tempo real.",
+				"modal": {
+					"subTitle": "",
+					"description": "Agents Live é uma aplicação full-stack que simula salas de perguntas em tempo real com suporte a voz. O usuário pode criar uma sala, registrar perguntas via texto ou gravar áudios diretamente no navegador. Esses áudios são enviados para o back-end, onde são processados e transformados em texto para alimentar uma IA que responde automaticamente. O front-end foi desenvolvido com React + TypeScript, utilizando Vite para o build e React Router para navegação entre as rotas. A interface é organizada em três fluxos principais: criação de sala, visualização de perguntas e gravação de áudio. O projeto utiliza o MediaRecorder para capturar áudio pelo navegador, que é enviado periodicamente para a API. No back-end (Desenvolvido com Node.js + Fastify), há rotas REST para gerenciamento de salas e perguntas e uma rota dedicada para upload das gravações.",
+					"techs": "Tecnologias utilizadas"
+				}
+			},
+			"third-project-card": {
+				"title": "Star Wars API",
+				"description": "Uma API REST desenvolvida em Node.js com TypeScript para gerenciar elementos do universo Star Wars. É um sistema completo com autenticação JWT, CRUD para personagens, naves espaciais, planetas e sistemas estelares, utilizando Prisma ORM com MySQL e documentação Swagger.",
+				"modal": {
+					"subTitle": "",
+					"description": "Essa é uma API REST que desenvolvi para gerenciar dados do universo Star Wars — personagens, naves, planetas e sistemas estelares. A ideia foi criar um sistema completo de cadastro, organizado em uma arquitetura escalável, seguindo boas práticas de back-end com Node.js e TypeScript. Implementei autenticação com JWT, rotas protegidas, validações de entrada, tratamento de erros padronizado e documentação interativa com Swagger. Usei o Prisma como ORM para as migrations conectado ao MySQL",
+					"techs": "Tecnologias utilizadas"
+				}
+			},
+			"fourth-project-card": {
+				"title": "Voll.med API",
+				"description": "Voll.med API é uma aplicação REST feita com Spring Boot para gerenciar pacientes, médicos e consultas. Com ela, é possível cadastrar, atualizar e excluir dados, além de realizar agendamentos e cancelamentos de consultas médicas de forma simples e segura.",
+				"modal": {
+					"subTitle": "",
+					"description": "Voll.med é uma aplicação API REST desenvolvida com Java e Spring Boot para gerenciar uma clínica médica fictícia. Com endpoints organizados para pacientes, médicos e consultas, a API permite operações completas de cadastro, edição, listagem e exclusão, além de agendamento e cancelamento de consultas. A autenticação é feita via JWT, garantindo segurança no acesso às rotas protegidas. Toda a documentação é gerada automaticamente com Swagger, e o projeto segue uma estrutura limpa, modular e com boas práticas de organização e validação.",
+					"techs": "Tecnologias utilizadas"
+				}
+			}
+		}
+	},
+	"contact": {
+		"title": "Vamos conversar!",
+		"subTitle": "",
+		"description": "Busco transformar ideias em soluções digitais modernas, funcionais e que realmente façam a diferença na experiência do usuário.",
+		"button": "Entrar em Contato",
+		"input": {
+			"name": "Seu nome",
+			"email": "E-mail (Ex: johndoe@gmail.com)",
+			"description": "Em que posso te ajudar?*"
+		},
+		"errors": {
+			"name": "nome",
+			"email": "e-mail",
+			"description": "mensagem",
+			"required": "O campo de {{field}} é obrigatório",
+			"minlength": "O campo {{field}} deve ter pelo menos {{min}} caracteres",
+			"maxlength": "O campo {{field}} não pode ultrapassar de {{max}} caracteres",
+			"invalidMail": "Formato de E-mail inválido"
+		}
+	},
+	"footer": {
+		"title": "2025 Lucas Gonçalves",
+		"subTitle": "Todos os direitos reservados"
+	}
 }

@@ -1,41 +1,41 @@
 <div class="flex flex-col w-full h-auto mx-auto py-20 bg-black">
-    <div class="justify-center items-center mx-auto mb-20 text-white">
-        <span
-            class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
-            >{{ 'experiences.title' | translate }}</span
-        >
-        <span
-            class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
-            >{{ 'experiences.strong' | translate }}</span
-        >
-    </div>
-    <div class="flex flex-col w-full md:w-3/4 mx-auto h-auto px-6 gap-10">
-        <experience-cards
-            [noBackground]="true"
-            [imageUrl]="'assets/img/fusion-logo.jpg'"
-            [title]="'experiences-card.first-experience-card.title'"
-            [subTitle]="'experiences-card.first-experience-card.subTitle'"
-            [description]="'experiences-card.first-experience-card.description'"
-            [initialDate]="'experiences-card.first-experience-card.initialDate'"
-            [endDate]="'experiences-card.first-experience-card.endDate'"
-        />
-        <experience-cards
-            [noBorder]="true"
-            [imageUrl]="'assets/img/gnm-logo.png'"
-            [title]="'experiences-card.second-experience-card.title'"
-            [subTitle]="'experiences-card.second-experience-card.subTitle'"
-            [description]="'experiences-card.second-experience-card.description'"
-            [initialDate]="'experiences-card.second-experience-card.initialDate'"
-            [endDate]="'experiences-card.second-experience-card.endDate'"
-        />
-        <experience-cards
-            [noBackground]="true"
-            [imageUrl]="'assets/img/prefeitura-de-caraguatatuba-logo.jpg'"
-            [title]="'experiences-card.third-experience-card.title'"
-            [subTitle]="'experiences-card.third-experience-card.subTitle'"
-            [description]="'experiences-card.third-experience-card.description'"
-            [initialDate]="'experiences-card.third-experience-card.initialDate'"
-            [endDate]="'experiences-card.third-experience-card.endDate'"
-        />
-    </div>
+	<div class="justify-center items-center mx-auto mb-20 text-white">
+		<span
+			class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight"
+			>{{ 'experiences.title' | translate }}</span
+		>
+		<span
+			class="text-[28px] leading-8 md:text-5xl md:leading-14 tracking-tight font-extrabold"
+			>{{ 'experiences.strong' | translate }}</span
+		>
+	</div>
+	<div class="flex flex-col w-full md:w-3/4 mx-auto h-auto px-6 gap-10">
+		<experience-cards
+			[noBackground]="true"
+			[imageUrl]="'assets/img/gnm-logo.png'"
+			[title]="'experiences-card.first-experience-card.title'"
+			[subTitle]="'experiences-card.first-experience-card.subTitle'"
+			[description]="'experiences-card.first-experience-card.description'"
+			[initialDate]="'experiences-card.first-experience-card.initialDate'"
+			[endDate]="'experiences-card.first-experience-card.endDate'"
+		/>
+		<experience-cards
+			[noBorder]="true"
+			[imageUrl]="'assets/img/fusion-logo.jpg'"
+			[title]="'experiences-card.second-experience-card.title'"
+			[subTitle]="'experiences-card.second-experience-card.subTitle'"
+			[description]="'experiences-card.second-experience-card.description'"
+			[initialDate]="'experiences-card.second-experience-card.initialDate'"
+			[endDate]="'experiences-card.second-experience-card.endDate'"
+		/>
+		<experience-cards
+			[noBackground]="true"
+			[imageUrl]="'assets/img/prefeitura-de-caraguatatuba-logo.jpg'"
+			[title]="'experiences-card.third-experience-card.title'"
+			[subTitle]="'experiences-card.third-experience-card.subTitle'"
+			[description]="'experiences-card.third-experience-card.description'"
+			[initialDate]="'experiences-card.third-experience-card.initialDate'"
+			[endDate]="'experiences-card.third-experience-card.endDate'"
+		/>
+	</div>
 </div>
