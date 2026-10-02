@@ -1,8 +1,8 @@
 {
 	"hero-section": {
 		"greeting": "Hello, I'm ",
-		"username": "Lucas Gonçalves",
-		"areaTitle": "Full-Stack ",
+		"username": "Lucas",
+		"areaTitle": "Web ",
 		"outlinedRole": "Developer",
 		"based": "Based in ",
 		"country": "Brazil",
@@ -55,9 +55,9 @@
 	"about": {
 		"title": "About ",
 		"strong": "Me",
-		"firstParagraph": "I'm a full-stack developer passionate about creating digital solutions that combine functionality, performance, and a positive user experience. I work with Java (Spring Boot), Node.js (Express), Angular, and React. I am always seeking to evolve as a professional and deliver modern, scalable, well-built applications.",
-		"secondParagraph": "I began my journey with programming a few years ago, and I've been challenging myself ever since. I've studied new tools, built personal projects, and shared what I've learned. I'm interested in both the back end and well-thought-out, responsive front-end interfaces.",
-		"thirdParagraph": "Currently, I am focusing on developing complete applications. I am exploring everything from modeling APIs to designing interfaces with good code, versioning, and security practices. I'm always looking to learn, whether through the community, courses, or practice. Outside of programming, I enjoy playing games, watching anime, and playing my guitar. I also love learning new things about astronomy and technology."
+		"firstParagraph": "I’m a web developer, and I enjoy turning ideas into applications that actually work and are a pleasure to use. I have experience with Java, Spring Boot, Node.js and Angular, and I’ve recently become increasingly interested in back-end development.",
+		"secondParagraph": "I like to learn by doing, creating projects and experimenting with new technologies. I’m always trying to improve my code and better understand how to build applications that are more organized, secure, and easy to maintain.",
+		"thirdParagraph": "Outside of programming, I enjoy playing video games, watching anime, and playing the guitar. I’m also very curious about astronomy, technology, and anything that involves understanding how things work."
 	},
 	"projects": {
 		"title": "My ",

@@ -1,9 +1,9 @@
 {
 	"hero-section": {
-		"greeting": "Olá! sou ",
-		"username": "Lucas Gonçalves",
+		"greeting": "Olá! Me chamo ",
+		"username": "Lucas",
 		"areaTitle": "Desenvolvedor ",
-		"outlinedRole": "Full-Stack",
+		"outlinedRole": "Web",
 		"based": "",
 		"country": "",
 		"btn": "Ver mais",
@@ -11,7 +11,7 @@
 	},
 	"navbar": {
 		"firstTitle": "Sobre mim",
-		"secondTitle": "Skills",
+		"secondTitle": "Habilidades",
 		"thirdTitle": "Projetos",
 		"fourthTitle": "Contato",
 		"buttonTitle": "Currículo",
@@ -23,7 +23,7 @@
 	},
 	"skills": {
 		"title": "Minhas ",
-		"strong": "Skills"
+		"strong": "Habilidades"
 	},
 	"experiences": {
 		"title": "Minhas ",
@@ -55,9 +55,9 @@
 	"about": {
 		"title": "Sobre ",
 		"strong": "Mim",
-		"firstParagraph": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais que unem funcionalidade, performance e uma boa experiência para o usuário. Trabalho com tecnologias como Java(Spring Boot), Node.js(Express), Angular e React, sempre buscando evoluir como profissional e entregar aplicações modernas, escaláveis e bem construídas.",
-		"secondParagraph": "Minha jornada com a programação começou há alguns anos, e desde então, sigo me desafiando constantemente. Venho estudando novas ferramentas, construindo projetos pessoais e contribuindo com o que aprendo. Tenho um grande interesse por back-end, mas também curto trabalhar com interfaces bem pensadas e responsivas no front-end.",
-		"thirdParagraph": "Atualmente, foco em desenvolver aplicações completas, explorando desde a modelagem de APIs até o design de interfaces, com boas práticas de código, versionamento e segurança. Estou sempre buscando aprender, seja com a comunidade, com cursos ou através da prática. Quando não estou programando, gosto de jogar, curtir um bom anime ou tocar na minha guitarra haha. Também amo aprender algo novo sobre astronomia e tecnologia."
+		"firstParagraph": "Sou desenvolvedor Web e gosto de transformar ideias em aplicações que realmente funcionam e sejam agradáveis de usar. Tenho experiência com Java, Spring Boot, Node.js e Angular, e atualmente tenho me interessado cada vez mais pelo desenvolvimento Back-End.",
+		"secondParagraph": "Gosto de aprender na prática, criando projetos e experimentando novas tecnologias. Estou sempre tentando melhorar meu código e entender melhor como construir aplicações mais organizadas, seguras e fáceis de manter.",
+		"thirdParagraph": "Fora da programação, gosto de jogar, assistir animes e tocar guitarra. Também tenho bastante curiosidade por astronomia, tecnologia e tudo que envolve entender como as coisas funcionam."
 	},
 	"projects": {
 		"title": "Meus ",
